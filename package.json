@@ -1,0 +1,77 @@
+{
+  "name": "cursor-agent-zh",
+  "displayName": "Cursor 简体中文语言包",
+  "description": "Cursor 中文汉化工具：补全 Agent、Chat、Settings、菜单与命令面板，并在 Cursor 升级后自动更新。",
+  "version": "1.0.0",
+  "publisher": "cursor-agent-zh",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "Cursor",
+    "Chinese",
+    "Simplified Chinese",
+    "language pack",
+    "简体中文",
+    "中文语言包",
+    "汉化",
+    "Agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moonliere-afk/cursor-zh-cn-language-pack.git"
+  },
+  "homepage": "https://github.com/moonliere-afk/cursor-zh-cn-language-pack#readme",
+  "bugs": {
+    "url": "https://github.com/moonliere-afk/cursor-zh-cn-language-pack/issues"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionDependencies": [
+    "polang233.cursor-language-pack"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorAgentZh.apply",
+        "title": "Cursor Agent 中文：应用汉化"
+      },
+      {
+        "command": "cursorAgentZh.restore",
+        "title": "Cursor Agent 中文：还原英文"
+      },
+      {
+        "command": "cursorAgentZh.status",
+        "title": "Cursor Agent 中文：查看状态"
+      },
+      {
+        "command": "cursorAgentZh.scan",
+        "title": "Cursor Agent 中文：扫描升级增量"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor Agent 简体中文",
+      "properties": {
+        "cursorAgentZh.autoApplyAfterUpgrade": {
+          "type": "boolean",
+          "default": true,
+          "description": "Cursor 升级或安装文件被更新后，自动重新应用语言补丁并生成增量扫描报告。"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "normalize": "node scripts/normalize-translations.js",
+    "audit": "node scripts/audit.js",
+    "test": "node scripts/test.js",
+    "package": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.0.0"
+  }
+}

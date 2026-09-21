@@ -1,0 +1,1802 @@
+[
+  {
+    "from": "completedAction:\"Read\"",
+    "to": "completedAction:\"已读取\""
+  },
+  {
+    "from": "action:\"Read\"",
+    "to": "action:\"已读取\""
+  },
+  {
+    "from": "completed:\"Read\"",
+    "to": "completed:\"已读取\""
+  },
+  {
+    "from": "error:\"Read\"",
+    "to": "error:\"已读取\""
+  },
+  {
+    "from": "[\"Reading\",\"Read\",\"Read attempted\"]",
+    "to": "[\"正在读取\",\"已读取\",\"读取失败\"]"
+  },
+  {
+    "from": "label:\"Incorrect\"",
+    "to": "label:\"不正确\""
+  },
+  {
+    "from": "label:\"Incomplete\"",
+    "to": "label:\"不完整\""
+  },
+  {
+    "from": "label:\"Too slow\"",
+    "to": "label:\"太慢\""
+  },
+  {
+    "from": "label:\"Pending approval\"",
+    "to": "label:\"等待批准\""
+  },
+  {
+    "from": "loadingAction:\"Running\"",
+    "to": "loadingAction:\"正在运行\""
+  },
+  {
+    "from": "completedAction:\"Ran\"",
+    "to": "completedAction:\"已运行\""
+  },
+  {
+    "from": "shellToolCall:{loading:\"Running\",completed:\"Ran\",error:\"Run\"}",
+    "to": "shellToolCall:{loading:\"正在运行\",completed:\"已运行\",error:\"运行\"}"
+  },
+  {
+    "from": "mcpToolCall:{loading:\"Running\",completed:\"Ran\",error:\"Run\"}",
+    "to": "mcpToolCall:{loading:\"正在运行\",completed:\"已运行\",error:\"运行\"}"
+  },
+  {
+    "from": "piBashToolCall:{loading:\"Running\",completed:\"Ran\",error:\"Run\"}",
+    "to": "piBashToolCall:{loading:\"正在运行\",completed:\"已运行\",error:\"运行\"}"
+  },
+  {
+    "from": "accessibleLabel:\"Account\"",
+    "to": "accessibleLabel:\"账户\""
+  },
+  {
+    "from": "children:[\"Open\"",
+    "to": "children:[\"打开\""
+  },
+  {
+    "from": "Your plan ends on ${e}. Resubscribe to keep using Cursor.",
+    "to": "你的方案将于 ${e} 到期。重新订阅以继续使用 Cursor。"
+  },
+  {
+    "from": "`${BbC(t)}% used`",
+    "to": "`${BbC(t)}% 已用`"
+  },
+  {
+    "from": "\"-% used\"",
+    "to": "\"-% 已用\""
+  },
+  {
+    "from": "tbg=[{value:\"default\",label:\"Default\"},{value:\"agentWindow\",label:\"Agent Window\"},{value:\"lastUsedWindows\",label:\"Last Used Windows\"}]",
+    "to": "tbg=[{value:\"default\",label:\"默认\"},{value:\"agentWindow\",label:\"智能体窗口\"},{value:\"lastUsedWindows\",label:\"上次使用的窗口\"}]"
+  },
+  {
+    "from": "Uvg=[{value:Ern,label:\"Compact\"},{value:F$n,label:\"Balanced\"},{value:O$n,label:\"Detailed\"}]",
+    "to": "Uvg=[{value:Ern,label:\"紧凑\"},{value:F$n,label:\"均衡\"},{value:O$n,label:\"详细\"}]"
+  },
+  {
+    "from": "$vg=[{value:\"breadcrumb\",label:\"Breadcrumb\"},{value:\"island\",label:\"Island\"}]",
+    "to": "$vg=[{value:\"breadcrumb\",label:\"面包屑\"},{value:\"island\",label:\"浮动岛\"}]"
+  },
+  {
+    "from": "[\"Data Sharing is controlled by \",_?\"the\":\"your\",\" team admin.\"",
+    "to": "[\"数据共享由\",_?\"该\":\"你的\",\"团队管理员控制。\""
+  },
+  {
+    "from": "\"Sharing will activate in \",p,\" hour\",p===1?\"\":\"s\",\".\"",
+    "to": "\"共享将在 \",p,\" 小时后启用。\""
+  },
+  {
+    "from": "\"You won\\u2019t be able to switch back to Privacy Mode (Legacy).\"",
+    "to": "\"将无法再切换回隐私模式（旧版）。\""
+  },
+  {
+    "from": "\"You\\u2019re in control of how your data is used\"",
+    "to": "\"你可以自行决定数据的使用方式\""
+  },
+  {
+    "from": "\"Choose how you\\u2019d like to share data with Cursor\"",
+    "to": "\"选择你希望如何与 Cursor 共享数据\""
+  },
+  {
+    "from": "\"Turn off anytime in Settings \\u2192 Privacy.\"",
+    "to": "\"可随时在设置 → 隐私中关闭。\""
+  },
+  {
+    "from": "\"Your team admin can switch to 'Privacy Mode' to use cloud agents.\"",
+    "to": "\"你的团队管理员可切换到「隐私模式」以使用云端智能体。\""
+  },
+  {
+    "from": "\"Go to Cursor Settings -> General -> Privacy, and switch to 'Privacy Mode' to use cloud agents.\"",
+    "to": "\"请前往 Cursor 设置 → 常规 → 隐私，并切换到「隐私模式」以使用云端智能体。\""
+  },
+  {
+    "from": "primaryButton:{id:\"confirm\",label:\"Switch\"},cancelButton:{id:\"cancel\",label:\"Cancel\"}",
+    "to": "primaryButton:{id:\"confirm\",label:\"切换\"},cancelButton:{id:\"cancel\",label:\"取消\"}"
+  },
+  {
+    "from": ">Background Agent Configuration</div>",
+    "to": ">后台智能体配置</div>"
+  },
+  {
+    "from": "This is the on-disk configuration for your background agents. For more information, see our <span class=underline>our docs</span>.",
+    "to": "这是后台智能体的磁盘配置。更多信息请参阅<span class=underline>文档</span>。"
+  },
+  {
+    "from": "aX0=\" Ask a team admin to update your team's privacy setting to use automations.\"",
+    "to": "aX0=\" 请让团队管理员更新团队隐私设置以使用自动化。\""
+  },
+  {
+    "from": "[B4C(),\"Data sharing is\",(()=>{var x=U4C();return ye(x,()=>a()?\" enabled \":\" disabled \"),x})(),\"for your team. You are on a Business plan, so your team admin can turn off or on data collection for your device.\"]",
+    "to": "[B4C(),\"数据共享\",(()=>{var x=U4C();return ye(x,()=>a()?\"已启用\":\"已关闭\"),x})(),\"。你使用的是商业方案，团队管理员可以为你的设备开启或关闭数据收集。\"]"
+  },
+  {
+    "from": "function fXd(t){if(t.commands===0)return[];const e=t.commands;return[`ran ${e} command${e===1?\"\":\"s\"}`]}",
+    "to": "function fXd(t){if(t.commands===0)return[];const e=t.commands;return[`运行了 ${e} 条命令`]}"
+  },
+  {
+    "from": "function mXd(t){return`${t} tool${t===1?\"\":\"s\"}`}",
+    "to": "function mXd(t){return`${t} 个工具`}"
+  },
+  {
+    "from": "o=>`${o} director${o===1?\"y\":\"ies\"}`",
+    "to": "o=>`${o} 个目录`"
+  },
+  {
+    "from": "a=>`${a} file${a===1?\"\":\"s\"}`",
+    "to": "a=>`${a} 个文件`"
+  },
+  {
+    "from": "compactText:o?\"1 file\":void 0",
+    "to": "compactText:o?\"1 个文件\":void 0"
+  },
+  {
+    "from": "`${t.searches} search${t.searches===1?\"\":\"es\"}`",
+    "to": "`${t.searches} 次搜索`"
+  },
+  {
+    "from": "`${t.fetches} fetch${t.fetches===1?\"\":\"es\"}`",
+    "to": "`${t.fetches} 次获取`"
+  },
+  {
+    "from": "text:\"lints\"});const r=t.mcpToolCalls",
+    "to": "text:\"代码检查\"});const r=t.mcpToolCalls"
+  },
+  {
+    "from": "`${s} browser action${s===1?\"\":\"s\"}`",
+    "to": "`${s} 个浏览器操作`"
+  },
+  {
+    "from": "text:`explored ${o.text}`",
+    "to": "text:`探索了 ${o.text}`"
+  },
+  {
+    "from": "compactText:`explored ${o.compactText}`",
+    "to": "compactText:`探索了 ${o.compactText}`"
+  },
+  {
+    "from": "`edited ${n} file${n===1?\"\":\"s\"}`",
+    "to": "`已编辑 ${n} 个文件`"
+  },
+  {
+    "from": "`${i} delete${i===1?\"\":\"s\"}`",
+    "to": "`${i} 处删除`"
+  },
+  {
+    "from": "`${e} image${e===1?\"\":\"s\"}`",
+    "to": "`${e} 张图片`"
+  },
+  {
+    "from": "`${e} agent${e===1?\"\":\"s\"}`",
+    "to": "`${e} 个智能体`"
+  },
+  {
+    "from": "children:\"2 files, ran 2 commands\"",
+    "to": "children:\"2 个文件，运行了 2 条命令\""
+  },
+  {
+    "from": "groupedMeta:\"2 commands\"",
+    "to": "groupedMeta:\"2 条命令\""
+  },
+  {
+    "from": "groupedMeta:\"2 files\"",
+    "to": "groupedMeta:\"2 个文件\""
+  },
+  {
+    "from": "`${t.commands.length} ${t.commands.length===1?\"command\":\"commands\"}`",
+    "to": "`${t.commands.length} 条命令`"
+  },
+  {
+    "from": "n.length===1?`Run ${n[0]} command?`:n.length>1?`Run ${n.length} commands?`:\"Run command?\"",
+    "to": "n.length===1?`运行 ${n[0]} 命令？`:n.length>1?`运行这 ${n.length} 条命令？`:\"运行命令？\""
+  },
+  {
+    "from": "goal:{searchKeywords:[\"Finish\",\"Objective\",\"Persistent\"]}",
+    "to": "goal:{description:\"目标会让智能体跨多轮持续工作直到完成——使用 /goal 即可开始\",searchKeywords:[\"Finish\",\"Objective\",\"Persistent\"]}"
+  },
+  {
+    "from": "loop:{searchKeywords:[\"Repeat\",\"Recurring\",\"Interval\",\"Periodic\"]}",
+    "to": "loop:{description:\"按间隔重复运行提示或技能——使用 /loop 即可开始\",searchKeywords:[\"Repeat\",\"Recurring\",\"Interval\",\"Periodic\"]}"
+  },
+  {
+    "from": "\"create-hook\":{description:\"在特定事件发生时运行操作。\",searchKeywords:[\"Trigger\",\"Event\",\"Lifecycle\"]}",
+    "to": "\"create-hook\":{description:\"钩子可控制和扩展智能体循环——使用 /create-hook 即可开始\",searchKeywords:[\"Trigger\",\"Event\",\"Lifecycle\"]}"
+  },
+  {
+    "from": "\"create-rule\":{searchKeywords:[\"Instructions\",\"Guidelines\",\"Standards\",\"Conventions\"]}",
+    "to": "\"create-rule\":{description:\"使用 /create-rule，通过系统级指令控制智能体行为\",searchKeywords:[\"Instructions\",\"Guidelines\",\"Standards\",\"Conventions\"]}"
+  },
+  {
+    "from": "\"create-skill\":{searchKeywords:[\"SKILL.md\",\"Workflow\",\"Capability\"]}",
+    "to": "\"create-skill\":{description:\"使用 /create-skill 按你的工作流自定义 Cursor\",searchKeywords:[\"SKILL.md\",\"Workflow\",\"Capability\"]}"
+  },
+  {
+    "from": "\"create-subagent\":{searchKeywords:[\"Delegate\",\"Specialist\",\"Agent\"]}",
+    "to": "\"create-subagent\":{description:\"使用 /create-subagent 创建专用智能体，供 Cursor 并行处理工作\",searchKeywords:[\"Delegate\",\"Specialist\",\"Agent\"]}"
+  },
+  {
+    "from": "sectionHeaderLabel:`On ${t.workspaceName.trim()||\"workspace\"}`",
+    "to": "sectionHeaderLabel:`在 ${t.workspaceName.trim()||\"工作区\"}`"
+  },
+  {
+    "from": "`Uncommitted changes in ${t.repoLabel}`",
+    "to": "`在 ${t.repoLabel} 中有未提交的更改`"
+  },
+  {
+    "from": "hcl={queue:\"Queue\",steer:\"Send Immediately\",\"stop-and-send\":\"Interrupt\",interrupt:\"Interrupt\"}",
+    "to": "hcl={queue:\"排队\",steer:\"立即发送\",\"stop-and-send\":\"中断\",interrupt:\"中断\"}"
+  },
+  {
+    "from": "ovg=[{value:\"queue\",label:xki(\"Queue\",\"Send after Agent finishes\")},{value:\"steer\",label:xki(\"Send immediately without interrupting\",\"Steer the Agent without stopping it\")},{value:\"stop-and-send\",label:xki(\"Send immediately by interrupting\",\"Stop Agent and send message\")}]",
+    "to": "ovg=[{value:\"queue\",label:xki(\"排队\",\"智能体完成后发送\")},{value:\"steer\",label:xki(\"立即发送且不中断\",\"引导智能体而不停止它\")},{value:\"stop-and-send\",label:xki(\"中断后立即发送\",\"停止智能体并发送消息\")}]"
+  },
+  {
+    "from": "avg=[{value:\"steer\",label:xki(\"Send immediately without interrupting\",\"Steer the Agent without stopping it\")},{value:\"interrupt\",label:xki(\"Send immediately by interrupting\",\"Stop Agent and send message\")}]",
+    "to": "avg=[{value:\"steer\",label:xki(\"立即发送且不中断\",\"引导智能体而不停止它\")},{value:\"interrupt\",label:xki(\"中断后立即发送\",\"停止智能体并发送消息\")}]"
+  },
+  {
+    "from": ">Send New Messages without queuing?</div><div>New messages now steer Agent instead of interrupting</div>",
+    "to": ">发送新消息时不排队？</div><div>新消息现在会引导智能体，而不再中断它</div>"
+  },
+  {
+    "from": "j_n=[{id:\"plugins\",label:\"Plugins\"},{id:\"mcps\",label:\"MCPs\"},{id:\"skills\",label:\"Skills\"},{id:\"agents\",label:\"Subagents\"},{id:\"rules\",label:\"Rules\"},{id:\"commands\",label:\"Commands\"},{id:\"hooks\",label:\"Hooks\"}]",
+    "to": "j_n=[{id:\"plugins\",label:\"插件\"},{id:\"mcps\",label:\"MCP\"},{id:\"skills\",label:\"技能\"},{id:\"agents\",label:\"子智能体\"},{id:\"rules\",label:\"规则\"},{id:\"commands\",label:\"命令\"},{id:\"hooks\",label:\"钩子\"}]"
+  },
+  {
+    "from": "kNp=[{id:\"plugins\",label:\"Plugins\"},{id:\"skills\",label:\"Skills\"},{id:\"tools\",label:\"MCPs\"},{id:\"subagents\",label:\"Subagents\"},{id:\"commands\",label:\"Commands\"}]",
+    "to": "kNp=[{id:\"plugins\",label:\"插件\"},{id:\"skills\",label:\"技能\"},{id:\"tools\",label:\"MCP\"},{id:\"subagents\",label:\"子智能体\"},{id:\"commands\",label:\"命令\"}]"
+  },
+  {
+    "from": "[{label:\"MCPs\",items:K_n(t.mcpServers)},{label:\"Skills\",items:K_n(t.skills)},{label:\"Subagents\",items:K_n(t.subagents)},{label:\"Rules\",items:K_n(t.rules)},{label:\"Commands\",items:K_n(t.commands)},{label:\"Hooks\",items:K_n(t.hooks)}]",
+    "to": "[{label:\"MCP\",items:K_n(t.mcpServers)},{label:\"技能\",items:K_n(t.skills)},{label:\"子智能体\",items:K_n(t.subagents)},{label:\"规则\",items:K_n(t.rules)},{label:\"命令\",items:K_n(t.commands)},{label:\"钩子\",items:K_n(t.hooks)}]"
+  },
+  {
+    "from": "[{label:\"MCPs\",items:Te(t.plugin.mcpServers)},{label:\"Skills\",items:Te(t.plugin.skills)},{label:\"Subagents\",items:Te(t.plugin.subagents)},{label:\"Rules\",items:Te(t.plugin.rules)},{label:\"Commands\",items:Te(t.plugin.commands)},{label:\"Hooks\",items:Te(t.plugin.hooks)}]",
+    "to": "[{label:\"MCP\",items:Te(t.plugin.mcpServers)},{label:\"技能\",items:Te(t.plugin.skills)},{label:\"子智能体\",items:Te(t.plugin.subagents)},{label:\"规则\",items:Te(t.plugin.rules)},{label:\"命令\",items:Te(t.plugin.commands)},{label:\"钩子\",items:Te(t.plugin.hooks)}]"
+  },
+  {
+    "from": "Ec(\"rules\",\"rules\",{label:\"Rules\"}),Ec(\"rules\",\"skills\",{label:\"Skills\",surface:\"ide\"}),Ec(\"rules\",\"subagents\",{label:\"Subagents\",surface:\"ide\"}),Ec(\"rules\",\"commands\",{label:\"Commands\"})",
+    "to": "Ec(\"rules\",\"rules\",{label:\"规则\"}),Ec(\"rules\",\"skills\",{label:\"技能\",surface:\"ide\"}),Ec(\"rules\",\"subagents\",{label:\"子智能体\",surface:\"ide\"}),Ec(\"rules\",\"commands\",{label:\"命令\"})"
+  },
+  {
+    "from": "title:\"Skills\",helpTooltipLabel:",
+    "to": "title:\"技能\",helpTooltipLabel:"
+  },
+  {
+    "from": "title:\"Rules\",helpTooltipLabel:",
+    "to": "title:\"规则\",helpTooltipLabel:"
+  },
+  {
+    "from": "title:\"Commands\",helpTooltipLabel:",
+    "to": "title:\"命令\",helpTooltipLabel:"
+  },
+  {
+    "from": "title:\"Subagents\",helpTooltipLabel:",
+    "to": "title:\"子智能体\",helpTooltipLabel:"
+  },
+  {
+    "from": "se(hki,{title:\"Hooks\",description:",
+    "to": "se(hki,{title:\"钩子\",description:"
+  },
+  {
+    "from": "kind:\"hooks\",key:\"hooks\",title:\"Hooks\"",
+    "to": "kind:\"hooks\",key:\"hooks\",title:\"钩子\""
+  },
+  {
+    "from": "get title(){return`Configured Hooks (${E()})`}",
+    "to": "get title(){return`已配置的钩子（${E()}）`}"
+  },
+  {
+    "from": "`${ft} are moving to Customize`",
+    "to": "`${ft} 将移至「自定义」`"
+  },
+  {
+    "from": "`${ft} in Customize`",
+    "to": "`${ft}（自定义）`"
+  },
+  {
+    "from": "`Open ${ft} in Customize`",
+    "to": "`在「自定义」中打开${ft}`"
+  },
+  {
+    "from": "get codicon(){return at.plus},children:\"New\"}",
+    "to": "get codicon(){return at.plus},children:\"新建\"}"
+  },
+  {
+    "from": "codicon:at.plus}},disableZeroPadding:!0,children:\"New\"}",
+    "to": "codicon:at.plus}},disableZeroPadding:!0,children:\"新建\"}"
+  },
+  {
+    "from": "onSelectNewItem(t.newItems[0].id),children:\"New\"}",
+    "to": "onSelectNewItem(t.newItems[0].id),children:\"新建\"}"
+  },
+  {
+    "from": "name:\"add\",size:\"xs\",\"aria-hidden\":!0}),\"New\"]}",
+    "to": "name:\"add\",size:\"xs\",\"aria-hidden\":!0}),\"新建\"]}"
+  },
+  {
+    "from": "name:\"plus\",\"aria-hidden\":!0}),\"New\"]}",
+    "to": "name:\"plus\",\"aria-hidden\":!0}),\"新建\"]}"
+  },
+  {
+    "from": "name:\"plus\",size:\"base\",\"aria-hidden\":\"true\"}),\"New\"]}",
+    "to": "name:\"plus\",size:\"base\",\"aria-hidden\":\"true\"}),\"新建\"]}"
+  },
+  {
+    "from": "size:\"sm\",variant:c,children:\"New\"})",
+    "to": "size:\"sm\",variant:c,children:\"新\"})"
+  },
+  {
+    "from": "size:\"sm\",variant:\"accent\",children:\"New\"})",
+    "to": "size:\"sm\",variant:\"accent\",children:\"新\"})"
+  },
+  {
+    "from": "return e?\"允许列表（含沙箱）\":\"Allowlist\"",
+    "to": "return e?\"允许列表（含沙箱）\":\"允许列表\""
+  },
+  {
+    "from": "title:`Dev Delay Next Auto-review (${UJi} s)`",
+    "to": "title:`开发：延迟下一次自动审阅（${UJi} 秒）`"
+  },
+  {
+    "from": "n.info(`Next Auto-review classifier will wait ${UJi} seconds.`)",
+    "to": "n.info(`下一次自动审阅分类器将等待 ${UJi} 秒。`)"
+  },
+  {
+    "from": "function Caw(t){return Ats(t?.smartModeApprovalReason)??Ats(t?.blockReason)}",
+    "to": "function Caw(t){var r=Ats(t?.smartModeApprovalReason)??Ats(t?.blockReason);return typeof globalThis.__czhReviewReason===\"function\"?globalThis.__czhReviewReason(r):r}"
+  },
+  {
+    "from": "function PtS(t){return t.reason===\"smartMode\"?t.smartModeApprovalReason:void 0}",
+    "to": "function PtS(t){return t.reason===\"smartMode\"?(typeof globalThis.__czhReviewReason===\"function\"?globalThis.__czhReviewReason(t.smartModeApprovalReason):t.smartModeApprovalReason):void 0}"
+  },
+  {
+    "from": "case yt.WEB_SEARCH:return Ats(e.smartModeApprovalReason);case yt.READ_FILE:case yt.READ_FILE_V2:return Ats(e.blockReason);",
+    "to": "case yt.WEB_SEARCH:return typeof globalThis.__czhReviewReason===\"function\"?globalThis.__czhReviewReason(Ats(e.smartModeApprovalReason)):Ats(e.smartModeApprovalReason);case yt.READ_FILE:case yt.READ_FILE_V2:return typeof globalThis.__czhReviewReason===\"function\"?globalThis.__czhReviewReason(Ats(e.blockReason)):Ats(e.blockReason);"
+  },
+  {
+    "from": "smartModeApprovalReason:S.reason",
+    "to": "smartModeApprovalReason:typeof globalThis.__czhReviewReason===\"function\"?globalThis.__czhReviewReason(S.reason):S.reason"
+  },
+  {
+    "from": "function enC(t){return t.map(e=>({...e,text:e.text.trim()})).filter(e=>e.targetSurfaces.includes(\"glass\")&&e.text.length>0)}",
+    "to": "function enC(t){return t.map(e=>{var s=e.text.trim();if(typeof globalThis.__czhProductTip===\"function\")s=String(globalThis.__czhProductTip(s)??s);return{...e,text:s}}).filter(e=>e.targetSurfaces.includes(\"glass\")&&e.text.length>0)}"
+  },
+  {
+    "from": "function Fiw(t,e,n){const i=t.filter(s=>!(n.hideInCloudTip===!0&&Uiw(s))).map(s=>({text:s.text.trim(),enabled:s.enabled}))",
+    "to": "function Fiw(t,e,n){const i=t.filter(s=>!(n.hideInCloudTip===!0&&Uiw(s))).map(s=>{var x=s.text.trim();if(typeof globalThis.__czhProductTip===\"function\")x=String(globalThis.__czhProductTip(x)??x);return{text:x,enabled:s.enabled}})"
+  },
+  {
+    "from": "QtC=\"Tip dismissed. You can turn off future tips in Settings\"",
+    "to": "QtC=\"已关闭提示。可在设置中关闭以后的提示\""
+  },
+  {
+    "from": "\"aria-label\":\"Hide tips\"",
+    "to": "\"aria-label\":\"隐藏提示\""
+  },
+  {
+    "from": "Ec(\"profile\",\"email\",{label:\"Email\"",
+    "to": "Ec(\"profile\",\"email\",{label:\"邮箱\""
+  },
+  {
+    "from": "Ec(\"profile\",\"handle\",{label:\"Handle\"",
+    "to": "Ec(\"profile\",\"handle\",{label:\"用户名\""
+  },
+  {
+    "from": "Ec(\"profile\",\"links\",{label:\"Links\"",
+    "to": "Ec(\"profile\",\"links\",{label:\"链接\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"theme\",{label:\"Theme\"",
+    "to": "Ec(\"appearance\",\"theme\",{label:\"主题\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"colors\",{label:\"Colors\"",
+    "to": "Ec(\"appearance\",\"colors\",{label:\"颜色\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"hue\",{label:\"Hue\"",
+    "to": "Ec(\"appearance\",\"hue\",{label:\"色调\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"intensity\",{label:\"Intensity\"",
+    "to": "Ec(\"appearance\",\"intensity\",{label:\"强度\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"typography\",{label:\"Typography\"",
+    "to": "Ec(\"appearance\",\"typography\",{label:\"字体排印\""
+  },
+  {
+    "from": "Ec(\"appearance\",\"motion\",{label:\"Motion\"",
+    "to": "Ec(\"appearance\",\"motion\",{label:\"动态效果\""
+  },
+  {
+    "from": "Ec(\"chat\",\"run-mode\",{label:\"Run Mode\"",
+    "to": "Ec(\"chat\",\"run-mode\",{label:\"运行模式\""
+  },
+  {
+    "from": "Ec(\"git-prs\",\"attribution\",{label:\"Attribution\"",
+    "to": "Ec(\"git-prs\",\"attribution\",{label:\"署名\""
+  },
+  {
+    "from": "Ec(\"git-prs\",\"review-provider\",{label:\"Review Provider\"",
+    "to": "Ec(\"git-prs\",\"review-provider\",{label:\"审查提供方\""
+  },
+  {
+    "from": "Ec(\"mcp\",\"authentication\",{label:\"Authentication\"",
+    "to": "Ec(\"mcp\",\"authentication\",{label:\"身份验证\""
+  },
+  {
+    "from": "Ec(\"indexing\",\"codebase\",{label:\"Codebase\"",
+    "to": "Ec(\"indexing\",\"codebase\",{label:\"代码库\""
+  },
+  {
+    "from": "Ec(\"indexing\",\"ignore-files\",{label:\"Ignore Files\"",
+    "to": "Ec(\"indexing\",\"ignore-files\",{label:\"忽略文件\""
+  },
+  {
+    "from": "Ec(\"beta\",\"update-access\",{label:\"Update Access\"",
+    "to": "Ec(\"beta\",\"update-access\",{label:\"更新通道\""
+  },
+  {
+    "from": "Ec(\"worktrees\",\"cleanup\",{label:\"Cleanup\"",
+    "to": "Ec(\"worktrees\",\"cleanup\",{label:\"清理\""
+  },
+  {
+    "from": "Ec(\"developer\",\"tracing\",{label:\"Tracing\"",
+    "to": "Ec(\"developer\",\"tracing\",{label:\"追踪\""
+  },
+  {
+    "from": "Ec(\"models\",\"gateway\",{label:\"Gateway\"",
+    "to": "Ec(\"models\",\"gateway\",{label:\"网关\""
+  },
+  {
+    "from": "label:\"Email\",surface:\"glass\"",
+    "to": "label:\"邮箱\",surface:\"glass\""
+  },
+  {
+    "from": "children:\"Email\"",
+    "to": "children:\"邮箱\""
+  },
+  {
+    "from": "children:\"Handle\"",
+    "to": "children:\"用户名\""
+  },
+  {
+    "from": "children:\"Links\"",
+    "to": "children:\"链接\""
+  },
+  {
+    "from": "label:\"Handle\",surface:\"glass\"",
+    "to": "label:\"用户名\",surface:\"glass\""
+  },
+  {
+    "from": "label:\"Links\",surface:\"glass\"",
+    "to": "label:\"链接\",surface:\"glass\""
+  },
+  {
+    "from": "label:\"Theme\",surface:\"glass\"",
+    "to": "label:\"主题\",surface:\"glass\""
+  },
+  {
+    "from": "label:\"Hue\",surface:\"glass\"",
+    "to": "label:\"色调\",surface:\"glass\""
+  },
+  {
+    "from": "S=`Included in ${g}`",
+    "to": "S=`${g} 方案包含`"
+  },
+  {
+    "from": "C=`Included in ${g}`",
+    "to": "C=`${g} 方案包含`"
+  },
+  {
+    "from": "iwg=[{value:\"fixed\",label:\"Fixed\"},{value:\"unlimited\",label:\"Unlimited\"},{value:\"disabled\",label:\"Disabled\"}]",
+    "to": "iwg=[{value:\"fixed\",label:\"固定金额\"},{value:\"unlimited\",label:\"不限额\"},{value:\"disabled\",label:\"已禁用\"}]"
+  },
+  {
+    "from": "label:\"Total\",children:zY(\"span\"",
+    "to": "label:\"合计\",children:zY(\"span\""
+  },
+  {
+    "from": "children:\"On-Demand\"",
+    "to": "children:\"按需\""
+  },
+  {
+    "from": ",\"% used\"]",
+    "to": ",\"% 已用\"]"
+  },
+  {
+    "from": "Your usage resets on ${e} (${n} ${n===1?\"day\":\"days\"}).",
+    "to": "你的用量将于 ${e} 重置（${n} 天）。"
+  },
+  {
+    "from": "Your usage resets on ${e}.",
+    "to": "你的用量将于 ${e} 重置。"
+  },
+  {
+    "from": "Upgrade to ${t.planName} to keep going.",
+    "to": "升级到 ${t.planName} 以继续使用。"
+  },
+  {
+    "from": "Adjust your limits to continue, or upgrade to ${t.planName}.",
+    "to": "请调整限额以继续，或升级到 ${t.planName}。"
+  },
+  {
+    "from": "t===void 0?\"Get more usage to continue\":\"Get more usage to switch models\"",
+    "to": "t===void 0?\"获取更多用量以继续\":\"获取更多用量以切换模型\""
+  },
+  {
+    "from": "children:\"web dashboard\"",
+    "to": "children:\"网页控制台\""
+  },
+  {
+    "from": "description:\"Off disables Self-driving for PRs owned by this account.\"",
+    "to": "description:\"关闭后，将禁用此账户所拥有 PR 的自动驾驶。\""
+  },
+  {
+    "from": "description:\"Starts Self-driving when a PR opens on an enabled repository.\"",
+    "to": "description:\"在已启用的仓库打开 PR 时启动自动驾驶。\""
+  },
+  {
+    "from": "description:\"Posts Self-driving updates to Slack when there are suggestions for PRs.\"",
+    "to": "description:\"当 PR 有建议时，将自动驾驶更新发送到 Slack。\""
+  },
+  {
+    "from": "children:\"When enabled, your cursor.com profile page is visible to anyone with the link.\"",
+    "to": "children:\"启用后，任何有链接的人都可以看到你的 cursor.com 个人主页。\""
+  },
+  {
+    "from": "children:\"Public profiles are disabled by your team admin.\"",
+    "to": "children:\"团队管理员已禁用公开个人主页。\""
+  },
+  {
+    "from": "zul=\"Usage past your limit is billed later as on-demand.\"",
+    "to": "zul=\"超出限额的用量稍后将按需计费。\""
+  },
+  {
+    "from": "label:\"Follow System Color Scheme\"",
+    "to": "label:\"跟随系统配色\""
+  },
+  {
+    "from": "label:\"Profile Image\"",
+    "to": "label:\"头像\""
+  },
+  {
+    "from": "children:\"Profile Image\"",
+    "to": "children:\"头像\""
+  },
+  {
+    "from": "label:\"Public Profile\"",
+    "to": "label:\"公开个人主页\""
+  },
+  {
+    "from": "children:\"Public Profile\"",
+    "to": "children:\"公开个人主页\""
+  },
+  {
+    "from": "label:\"Allow Agents on My PRs\"",
+    "to": "label:\"允许智能体处理我的 PR\""
+  },
+  {
+    "from": "label:\"Start When I Open a PR\"",
+    "to": "label:\"打开 PR 时启动\""
+  },
+  {
+    "from": "label:\"Post to Slack\"",
+    "to": "label:\"发布到 Slack\""
+  },
+  {
+    "from": "label:\"Default Mode\"",
+    "to": "label:\"默认模式\""
+  },
+  {
+    "from": "children:\"API Keys\"",
+    "to": "children:\"API 密钥\""
+  },
+  {
+    "from": "children:\"Finishing setup\\u2026\"",
+    "to": "children:\"正在完成设置…\""
+  },
+  {
+    "from": "function Y_S(t){switch(t){case\"stable\":return\"Default\";case\"prerelease\":return\"Early Access\";case\"dev\":return\"Nightly\";case\"dogfood\":return\"Dogfood\";case\"candidate\":return\"Candidate\";default:return t}}",
+    "to": "function Y_S(t){switch(t){case\"stable\":return\"默认\";case\"prerelease\":return\"抢先体验\";case\"dev\":return\"每日构建\";case\"dogfood\":return\"内部测试\";case\"candidate\":return\"候选版\";default:return t}}"
+  },
+  {
+    "from": "description:`Accept the next word of a suggestion via ${d}`,label:\"Partial Accepts\"",
+    "to": "description:`通过 ${d} 接受建议的下一个词`,label:\"部分接受\""
+  },
+  {
+    "from": "description:`Automatically jump to the next diff when accepting changes with ${wr?\"\\u2318\":\"Ctrl+\"}Y`,label:\"Jump to Next Diff on Accept\"",
+    "to": "description:`使用 ${wr?\"\\u2318\":\"Ctrl+\"}Y 接受更改后自动跳到下一处差异`,label:\"接受后跳到下一处差异\""
+  },
+  {
+    "from": "label:`Preview Box for Terminal ${wr?\"\\u2318\":\"Ctrl+\"}K`",
+    "to": "label:`终端 ${wr?\"\\u2318\":\"Ctrl+\"}K 预览框`"
+  },
+  {
+    "from": "label:\"Email\"",
+    "to": "label:\"邮箱\""
+  },
+  {
+    "from": "label:\"Handle\"",
+    "to": "label:\"用户名\""
+  },
+  {
+    "from": "label:\"Links\"",
+    "to": "label:\"链接\""
+  },
+  {
+    "from": "label:\"Theme\"",
+    "to": "label:\"主题\""
+  },
+  {
+    "from": "label:\"Colors\"",
+    "to": "label:\"颜色\""
+  },
+  {
+    "from": "label:\"Hue\"",
+    "to": "label:\"色调\""
+  },
+  {
+    "from": "label:\"Intensity\"",
+    "to": "label:\"强度\""
+  },
+  {
+    "from": "label:\"Typography\"",
+    "to": "label:\"字体排印\""
+  },
+  {
+    "from": "label:\"Motion\"",
+    "to": "label:\"动态效果\""
+  },
+  {
+    "from": "label:\"Gateway\"",
+    "to": "label:\"网关\""
+  },
+  {
+    "from": "label:\"Attribution\"",
+    "to": "label:\"署名\""
+  },
+  {
+    "from": "label:\"Authentication\"",
+    "to": "label:\"身份验证\""
+  },
+  {
+    "from": "label:\"Codebase\"",
+    "to": "label:\"代码库\""
+  },
+  {
+    "from": "label:\"Cleanup\"",
+    "to": "label:\"清理\""
+  },
+  {
+    "from": "label:\"Tracing\"",
+    "to": "label:\"追踪\""
+  },
+  {
+    "from": "label:\"Speed\"",
+    "to": "label:\"速度\""
+  },
+  {
+    "from": "label:\"Region\"",
+    "to": "label:\"区域\""
+  },
+  {
+    "from": "label:\"API Key\"",
+    "to": "label:\"API 密钥\""
+  },
+  {
+    "from": "children:\"Theme\"",
+    "to": "children:\"主题\""
+  },
+  {
+    "from": "children:\"No Docs Added\"",
+    "to": "children:\"尚未添加文档\""
+  },
+  {
+    "from": "children:\"No matching settings\"",
+    "to": "children:\"没有匹配的设置\""
+  },
+  {
+    "from": "children:\"Sign in to view and edit your profile.\"",
+    "to": "children:\"登录后即可查看和编辑个人资料。\""
+  },
+  {
+    "from": "children:\"Sign in to view and edit Self-driving settings.\"",
+    "to": "children:\"登录后即可查看和编辑自动驾驶设置。\""
+  },
+  {
+    "from": "children:\"Following System Color Scheme\"",
+    "to": "children:\"正在跟随系统配色\""
+  },
+  {
+    "from": "children:\"Open user config\"",
+    "to": "children:\"打开用户配置\""
+  },
+  {
+    "from": "children:\"Choose Custom Sound...\"",
+    "to": "children:\"选择自定义提示音...\""
+  },
+  {
+    "from": "children:\"Compute index\"",
+    "to": "children:\"计算索引\""
+  },
+  {
+    "from": "children:\"Use OpenAI API key\"",
+    "to": "children:\"使用 OpenAI API 密钥\""
+  },
+  {
+    "from": "children:\"No models available\"",
+    "to": "children:\"没有可用模型\""
+  },
+  {
+    "from": "label:\"Use Azure OpenAI\"",
+    "to": "label:\"使用 Azure OpenAI\""
+  },
+  {
+    "from": "label:\"Override OpenAI Base URL\"",
+    "to": "label:\"覆盖 OpenAI Base URL\""
+  },
+  {
+    "from": "title:\"Delete Codebase Index?\"",
+    "to": "title:\"删除代码库索引？\""
+  },
+  {
+    "from": "title:\"Import theme from file\"",
+    "to": "title:\"从文件导入主题\""
+  },
+  {
+    "from": "title:\"Cloud Agents\"",
+    "to": "title:\"云端智能体\""
+  },
+  {
+    "from": "description:\"Loading Cloud Agents settings...\"",
+    "to": "description:\"正在加载云端智能体设置...\""
+  },
+  {
+    "from": "worktrees:\"Worktrees\"",
+    "to": "worktrees:\"工作树\""
+  },
+  {
+    "from": "developer:\"Developer\"",
+    "to": "developer:\"开发人员\""
+  },
+  {
+    "from": "label:\"Test Model\"",
+    "to": "label:\"测试模型\""
+  },
+  {
+    "from": "label:\"Deployment Name\"",
+    "to": "label:\"部署名称\""
+  },
+  {
+    "from": "label:\"Command Allowlist\"",
+    "to": "label:\"命令允许列表\""
+  },
+  {
+    "from": "label:\"MCP Allowlist\"",
+    "to": "label:\"MCP 允许列表\""
+  },
+  {
+    "from": "label:\"MCP Tools Protection\"",
+    "to": "label:\"MCP 工具保护\""
+  },
+  {
+    "from": "label:\"Auto-Accept Web Search\"",
+    "to": "label:\"自动接受网页搜索\""
+  },
+  {
+    "from": "label:\"File-Deletion Protection\"",
+    "to": "label:\"文件删除保护\""
+  },
+  {
+    "from": "label:\"External-File Protection\"",
+    "to": "label:\"外部文件保护\""
+  },
+  {
+    "from": "label:\"Partial Accepts\"",
+    "to": "label:\"部分接受\""
+  },
+  {
+    "from": "label:\"Default Model\"",
+    "to": "label:\"默认模型\""
+  },
+  {
+    "from": "label:\"Keep This Computer Awake\"",
+    "to": "label:\"保持此计算机唤醒\""
+  },
+  {
+    "from": "label:\"Sync Theme with IDE\"",
+    "to": "label:\"与 IDE 同步主题\""
+  },
+  {
+    "from": "label:\"Theme Name\"",
+    "to": "label:\"主题名称\""
+  },
+  {
+    "from": "label:\"High Contrast\"",
+    "to": "label:\"高对比度\""
+  },
+  {
+    "from": "label:\"Slack Channel\"",
+    "to": "label:\"Slack 频道\""
+  },
+  {
+    "from": "label:\"Connect Slack\"",
+    "to": "label:\"连接 Slack\""
+  },
+  {
+    "from": "label:\"Manage Settings\"",
+    "to": "label:\"管理设置\""
+  },
+  {
+    "from": "label:\"Smart Allowlist\"",
+    "to": "label:\"智能允许列表\""
+  },
+  {
+    "from": "label:\"Fetch Domain Allowlist\"",
+    "to": "label:\"获取域名允许列表\""
+  },
+  {
+    "from": "label:\"Auto-Run Network Access\"",
+    "to": "label:\"自动运行网络访问\""
+  },
+  {
+    "from": "label:\"Start Agent Review on Commit\"",
+    "to": "label:\"提交时启动智能体审查\""
+  },
+  {
+    "from": "label:\"Auto-Run on Agent Finish\"",
+    "to": "label:\"智能体完成后自动运行\""
+  },
+  {
+    "from": "label:\"Include Submodules in Agent Review\"",
+    "to": "label:\"智能体审查包含子模块\""
+  },
+  {
+    "from": "label:\"Include Untracked Files in Agent Review\"",
+    "to": "label:\"智能体审查包含未跟踪文件\""
+  },
+  {
+    "from": "label:\"Default Approach\"",
+    "to": "label:\"默认方式\""
+  },
+  {
+    "from": "label:\"Team-Level Repository Control\"",
+    "to": "label:\"团队级仓库控制\""
+  },
+  {
+    "from": "label:\"Index Repositories for Instant Grep\"",
+    "to": "label:\"为即时 Grep 索引仓库\""
+  },
+  {
+    "from": "label:\"Suggestions While Commenting\"",
+    "to": "label:\"注释时也提供建议\""
+  },
+  {
+    "from": "label:\"Whitespace-Only Suggestions\"",
+    "to": "label:\"仅空白建议\""
+  },
+  {
+    "from": "label:\"Auto Import for Python\"",
+    "to": "label:\"Python 自动导入\""
+  },
+  {
+    "from": "label:\"Ignored Files\"",
+    "to": "label:\"忽略的文件\""
+  },
+  {
+    "from": "label:\"Embedding Model\"",
+    "to": "label:\"嵌入模型\""
+  },
+  {
+    "from": "label:\"Cpp Control Token\"",
+    "to": "label:\"Cpp 控制令牌\""
+  },
+  {
+    "from": "label:\"RPC Log Folder\"",
+    "to": "label:\"RPC 日志文件夹\""
+  },
+  {
+    "from": "label:\"Disposable Tracking\"",
+    "to": "label:\"一次性对象追踪\""
+  },
+  {
+    "from": "label:\"Solid Dev Tools\"",
+    "to": "label:\"Solid 开发工具\""
+  },
+  {
+    "from": "label:\"Leak Detection\"",
+    "to": "label:\"泄漏检测\""
+  },
+  {
+    "from": "label:\"Force View Zones\"",
+    "to": "label:\"强制显示视图区\""
+  },
+  {
+    "from": "label:\"Show View Zone When Preview Box Is Clipped\"",
+    "to": "label:\"预览框被裁剪时显示视图区\""
+  },
+  {
+    "from": "children:\"Jump back to the Agents Window to keep working across repos.\"",
+    "to": "children:\"返回智能体窗口，继续跨仓库工作。\""
+  },
+  {
+    "from": "description:`${wr?\"\\u2318Enter\":\"Ctrl+Enter\"} submits chat, Enter inserts a newline, and primary actions move to ${wr?\"\\u2325\\u2318Enter\":\"Ctrl+Alt+Enter\"}`,label:`Submit with ${wr?\"\\u2318 + \":\"Ctrl + \"}Enter`",
+    "to": "description:`${wr?\"\\u2318Enter\":\"Ctrl+Enter\"} 提交对话，Enter 插入换行，主要操作改为 ${wr?\"\\u2325\\u2318Enter\":\"Ctrl+Alt+Enter\"}`,label:`使用 ${wr?\"\\u2318 + \":\"Ctrl + \"}Enter 提交`"
+  },
+  {
+    "from": "defaultLabel:\"System font\"",
+    "to": "defaultLabel:\"系统字体\""
+  },
+  {
+    "from": "defaultLabel:\"System monospace\"",
+    "to": "defaultLabel:\"系统等宽字体\""
+  },
+  {
+    "from": "ariaLabel:\"UI Font Family\"",
+    "to": "ariaLabel:\"界面字体\""
+  },
+  {
+    "from": "ariaLabel:\"Code Font Family\"",
+    "to": "ariaLabel:\"代码字体\""
+  },
+  {
+    "from": "label:\"Cursor Default\"",
+    "to": "label:\"Cursor 默认\""
+  },
+  {
+    "from": "label:\"Last Used\"",
+    "to": "label:\"最近使用\""
+  },
+  {
+    "from": "title:\"Third-Party Imports\"",
+    "to": "title:\"第三方导入\""
+  },
+  {
+    "from": "accessibleLabel:\"Third-Party Imports\"",
+    "to": "accessibleLabel:\"第三方导入\""
+  },
+  {
+    "from": "children:S===null?\"Upload image\":\"Change image\"",
+    "to": "children:S===null?\"上传图片\":\"更换图片\""
+  },
+  {
+    "from": "children:\"Claim handle\"",
+    "to": "children:\"领取用户名\""
+  },
+  {
+    "from": "\"aria-label\":S?\"Claiming handle\":\"Claim handle\"",
+    "to": "\"aria-label\":S?\"正在领取用户名\":\"领取用户名\""
+  },
+  {
+    "from": "placeholder:\"First name\"",
+    "to": "placeholder:\"名\""
+  },
+  {
+    "from": "placeholder:\"Last name\"",
+    "to": "placeholder:\"姓\""
+  },
+  {
+    "from": "children:me??\"PNG, JPEG, or WebP up to 2 MB\"",
+    "to": "children:me??\"PNG、JPEG 或 WebP，最大 2 MB\""
+  },
+  {
+    "from": "h_l=[\"x.com/handle\",\"github.com/handle\",\"linkedin.com/in/handle\",\"website.com\"]",
+    "to": "h_l=[\"x.com/用户名\",\"github.com/用户名\",\"linkedin.com/in/用户名\",\"website.com\"]"
+  },
+  {
+    "from": "id:\"composer.queue.interrupt\",label:\"Interrupt\"",
+    "to": "id:\"composer.queue.interrupt\",label:\"中断\""
+  },
+  {
+    "from": "id:\"composer.queue.moveToNewChat\",label:\"Move to New Chat\"",
+    "to": "id:\"composer.queue.moveToNewChat\",label:\"移到新对话\""
+  },
+  {
+    "from": "id:\"composer.queue.newMessageSettings\",label:\"New Message Settings\"",
+    "to": "id:\"composer.queue.newMessageSettings\",label:\"新消息设置\""
+  },
+  {
+    "from": "onClick:ee,size:\"md\",variant:\"outline\",children:\"Remove\"",
+    "to": "onClick:ee,size:\"md\",variant:\"outline\",children:\"移除\""
+  },
+  {
+    "from": "children:S?LA(L9g,{}):\"Claim\"",
+    "to": "children:S?LA(L9g,{}):\"领取\""
+  },
+  {
+    "from": "defaultLabel:\"Gallery\"",
+    "to": "defaultLabel:\"图库\""
+  },
+  {
+    "from": "defaultLabel:\"Output\"",
+    "to": "defaultLabel:\"输出\""
+  },
+  {
+    "from": "defaultLabel:\"Side Chat\"",
+    "to": "defaultLabel:\"侧边对话\""
+  },
+  {
+    "from": "defaultLabel:\"Suggestion\"",
+    "to": "defaultLabel:\"建议\""
+  },
+  {
+    "from": "defaultLabel:\"Subagent\"",
+    "to": "defaultLabel:\"子智能体\""
+  },
+  {
+    "from": "WY={label:\"Code Block Word Wrap\",description:\"Wrap long lines in Agent conversation code blocks\"",
+    "to": "WY={label:\"代码块自动换行\",description:\"在智能体对话的代码块中对长行自动换行\""
+  },
+  {
+    "from": "HY={label:\"Themed Diff Backgrounds\",description:\"Use themed background colors for inline code diffs\"",
+    "to": "HY={label:\"主题化差异背景\",description:\"为行内代码差异使用主题背景色\""
+  },
+  {
+    "from": "onSelect:()=>r(Sr),children:\"Interrupt\"",
+    "to": "onSelect:()=>r(Sr),children:\"中断\""
+  },
+  {
+    "from": "children:\"Move to Side Chat\"",
+    "to": "children:\"移到侧边对话\""
+  },
+  {
+    "from": "\"aria-label\":\"Queued message actions\"",
+    "to": "\"aria-label\":\"排队消息操作\""
+  },
+  {
+    "from": "\"aria-label\":\"More actions\"",
+    "to": "\"aria-label\":\"更多操作\""
+  },
+  {
+    "from": "Kll=[{id:\"last-used\",label:\"Last Used\"},{id:\"cloud\",label:\"Cloud\"},{id:\"local\",label:\"Local\"},{id:\"new-worktree\",label:\"New Worktree\"},{id:\"shared-pool\",label:\"Team Pool\"},{id:\"remote-control\",label:\"Remote Control\"}]",
+    "to": "Kll=[{id:\"last-used\",label:\"最近使用\"},{id:\"cloud\",label:\"云端\"},{id:\"local\",label:\"本地\"},{id:\"new-worktree\",label:\"新建工作树\"},{id:\"shared-pool\",label:\"团队池\"},{id:\"remote-control\",label:\"远程控制\"}]"
+  },
+  {
+    "from": "I=_A(Rq_,{iconName:u,label:i.name,value:d})",
+    "to": "I=_A(Rq_,{iconName:u,label:globalThis.__czhParamLabel?.(i)??i.name,value:d})"
+  },
+  {
+    "from": "S=_A(Ms.SubMenuTrigger,{label:i.name,leading:f,trailing:y,children:i.name})",
+    "to": "S=_A(Ms.SubMenuTrigger,{label:globalThis.__czhParamLabel?.(i)??i.name,leading:f,trailing:y,children:globalThis.__czhParamLabel?.(i)??i.name})"
+  },
+  {
+    "from": "y=uri(Ms.SubMenuTrigger,{label:i.name,trailing:_,children:i.name})",
+    "to": "y=uri(Ms.SubMenuTrigger,{label:globalThis.__czhParamLabel?.(i)??i.name,trailing:_,children:globalThis.__czhParamLabel?.(i)??i.name})"
+  },
+  {
+    "from": "C=_A(Iph,{name:i.name,markdown:h})",
+    "to": "C=_A(Iph,{name:globalThis.__czhParamLabel?.(i)??i.name,markdown:h})"
+  },
+  {
+    "from": "const k=`${i.name} options`",
+    "to": "const k=`${globalThis.__czhParamLabel?.(i)??i.name} 选项`"
+  },
+  {
+    "from": "const S=`${i.name} options`",
+    "to": "const S=`${globalThis.__czhParamLabel?.(i)??i.name} 选项`"
+  },
+  {
+    "from": "r=`${n.name} parameters`",
+    "to": "r=`${n.name} 参数`"
+  },
+  {
+    "from": "\"aria-label\":`${i.name} parameters`",
+    "to": "\"aria-label\":`${i.name} 参数`"
+  },
+  {
+    "from": "x=y?\"Auto\":`${_.model.name} parameters`",
+    "to": "x=y?\"Auto\":`${_.model.name} 参数`"
+  },
+  {
+    "from": "S=b?\"Auto\":`${p.model.name} parameters`",
+    "to": "S=b?\"Auto\":`${p.model.name} 参数`"
+  },
+  {
+    "from": "dC(\"span\",{children:\"Compact\"}),dC(\"span\",{children:\"Detailed\"})",
+    "to": "dC(\"span\",{children:\"紧凑\"}),dC(\"span\",{children:\"详细\"})"
+  },
+  {
+    "from": "\"aria-label\":\"Conversation density\"",
+    "to": "\"aria-label\":\"对话密度\""
+  },
+  {
+    "from": "jus={ariaLabel:\"Detailed, edits with diffs and shells with output\",label:\"Detailed\",value:\"detailed\"},r_l=[jus,{ariaLabel:\"Edits with diffs and compact shells\",label:\"Diff Focus\",value:\"compact-shells\"},{ariaLabel:\"Compact edits and compact shells, not grouped\",label:\"Balanced\",value:\"compact-ungrouped\"},{ariaLabel:\"Compact grouped edits and shells\",label:\"Grouped\",value:\"compact-grouped\"},{ariaLabel:\"Compact grouped tool calls\",label:\"Compact\",value:\"compact-all-grouped\"}]",
+    "to": "jus={ariaLabel:\"详细：编辑含差异，终端含输出\",label:\"详细\",value:\"detailed\"},r_l=[jus,{ariaLabel:\"编辑含差异，终端保持紧凑\",label:\"差异优先\",value:\"compact-shells\"},{ariaLabel:\"紧凑编辑和紧凑终端，不分组\",label:\"均衡\",value:\"compact-ungrouped\"},{ariaLabel:\"分组的紧凑编辑和终端\",label:\"分组\",value:\"compact-grouped\"},{ariaLabel:\"分组的紧凑工具调用\",label:\"紧凑\",value:\"compact-all-grouped\"}]"
+  },
+  {
+    "from": "function FpS(t,e=Date.now()){const n=t-e;if(!Number.isFinite(n)||n<=0)return\"0 minutes left\";const i=1440*60*1e3;if(n>=i){const a=Math.ceil(n/i);return`${a} day${a===1?\"\":\"s\"} left`}const r=Math.floor(n/(1e3*60)),s=Math.floor(r/60),o=r%60;return s>0&&o>0?`${s} hour${s===1?\"\":\"s\"} and ${o} minute${o===1?\"\":\"s\"} left`:s>0?`${s} hour${s===1?\"\":\"s\"} left`:`${o} minute${o===1?\"\":\"s\"} left`}",
+    "to": "function FpS(t,e=Date.now()){const n=t-e;if(!Number.isFinite(n)||n<=0)return\"已到期\";const i=1440*60*1e3;if(n>=i){const a=Math.ceil(n/i);return`剩余 ${a} 天`}const r=Math.floor(n/(1e3*60)),s=Math.floor(r/60),o=r%60;return s>0&&o>0?`剩余 ${s} 小时 ${o} 分钟`:s>0?`剩余 ${s} 小时`:`剩余 ${o} 分钟`}"
+  },
+  {
+    "from": "children:[\"Usage limits reset on \",OpS(d),\" (\",FpS(d),\")\"]",
+    "to": "children:[\"用量限额将于 \",OpS(d),\" 重置（\",FpS(d),\"）\"]"
+  },
+  {
+    "from": "children:[n,\" day\",n===1?\"\":\"s\",\" \",\"left\"]",
+    "to": "children:[\"还剩 \",n,\" 天\"]"
+  },
+  {
+    "from": "o=s?\" (controlled by admin)\":\"\",a=`Prevent Agent from deleting files automatically${o}`",
+    "to": "o=s?\"（由管理员控制）\":\"\",a=`阻止智能体自动删除文件${o}`"
+  },
+  {
+    "from": "o=`Prevent Agent from automatically running MCP tools${s?\" (controlled by admin)\":\"\"}`",
+    "to": "o=`阻止智能体自动运行 MCP 工具${s?\"（由管理员控制）\":\"\"}`"
+  },
+  {
+    "from": "vue={section:\"Browser\",automation:\"Browser Automation\",protection:\"Browser Protection\",protectionDescription:\"Prevent Agent from automatically running Browser tools\",showLocalhostLinks:\"Open Local Links in Cursor Browser\",openWebLinks:\"Open Web Links in Cursor Browser\"}",
+    "to": "vue={section:\"浏览器\",automation:\"浏览器自动化\",protection:\"浏览器保护\",protectionDescription:\"阻止智能体自动运行浏览器工具\",showLocalhostLinks:\"在 Cursor 浏览器中打开本地链接\",openWebLinks:\"在 Cursor 浏览器中打开网页链接\"}"
+  },
+  {
+    "from": "Eul(rB,{description:\"Choose which models appear in the model picker\",title:\"Models\"",
+    "to": "Eul(rB,{description:\"选择要显示在模型选择器中的模型\",title:\"模型\""
+  },
+  {
+    "from": "children:\"View All Models\"",
+    "to": "children:\"查看全部模型\""
+  },
+  {
+    "from": "children:\"Add Models\"",
+    "to": "children:\"添加模型\""
+  },
+  {
+    "from": "}),\"Add Custom Model\"]}",
+    "to": "}),\"添加自定义模型\"]}"
+  },
+  {
+    "from": "description:`Automatically import necessary modules for ${S}`,label:\"Imports\"",
+    "to": "description:`自动为 ${S} 导入所需模块`,label:\"自动导入\""
+  },
+  {
+    "from": "description:\"Enable auto import for Python. This is a beta feature.\",label:\"Auto Import for Python\"",
+    "to": "description:\"启用 Python 自动导入。这是测试功能。\",label:\"Python 自动导入\""
+  },
+  {
+    "from": "variant:\"primary\",children:\"Upgrade\"",
+    "to": "variant:\"primary\",children:\"升级\""
+  },
+  {
+    "from": "l=d?`Upgrade to ${d.label}`:\"Upgrade\"",
+    "to": "l=d?`升级到 ${d.label}`:\"升级\""
+  },
+  {
+    "from": "[\"You can put in\",\" \",s_(Sul,{onClick:()=>{r.open(\"https://platform.openai.com/account/api-keys\")},children:\"your OpenAI key\"}),\" \",\"to use OpenAI models at cost.\"]",
+    "to": "[\"你可以填入\",\" \",s_(Sul,{onClick:()=>{r.open(\"https://platform.openai.com/account/api-keys\")},children:\"你的 OpenAI 密钥\"}),\" \",\"以便按成本使用 OpenAI 模型。\"]"
+  },
+  {
+    "from": "[\"You can put in\",\" \",s_(Sul,{onClick:()=>{s.open(\"https://console.anthropic.com/settings/keys\")},children:\"your Anthropic key\"}),\" \",'to use Claude at cost. When enabled, this key will be used for all models beginning with \"claude-\".']",
+    "to": "[\"你可以填入\",\" \",s_(Sul,{onClick:()=>{s.open(\"https://console.anthropic.com/settings/keys\")},children:\"你的 Anthropic 密钥\"}),\" \",'以便按成本使用 Claude。启用后，该密钥将用于所有以 \"claude-\" 开头的模型。']"
+  },
+  {
+    "from": "[\"You can put in\",\" \",s_(Sul,{onClick:()=>{s.open(\"https://aistudio.google.com/app/apikey\")},children:\"your Google AI Studio key\"}),\" \",\"to use Google models at-cost.\"]",
+    "to": "[\"你可以填入\",\" \",s_(Sul,{onClick:()=>{s.open(\"https://aistudio.google.com/app/apikey\")},children:\"你的 Google AI Studio 密钥\"}),\" \",\"以便按成本使用 Google 模型。\"]"
+  },
+  {
+    "from": "label:\"Use OpenAI API key\"",
+    "to": "label:\"使用 OpenAI API 密钥\""
+  },
+  {
+    "from": "label:\"Use Cursor Browser\"},{id:\"playwright\",label:\"Use External Browser\"},{id:\"none\",label:\"Do not use browser\"}",
+    "to": "label:\"使用 Cursor 浏览器\"},{id:\"playwright\",label:\"使用外部浏览器\"},{id:\"none\",label:\"不使用浏览器\"}"
+  },
+  {
+    "from": "\" (controlled by admin)\"",
+    "to": "\"（由管理员控制）\""
+  },
+  {
+    "from": "hcl={queue:\"Queue\",steer:\"立即发送\",\"stop-and-send\":\"Interrupt\",interrupt:\"Interrupt\"}",
+    "to": "hcl={queue:\"排队\",steer:\"立即发送\",\"stop-and-send\":\"中断\",interrupt:\"中断\"}"
+  },
+  {
+    "from": "hcl[B]??\"Interrupt\"",
+    "to": "hcl[B]??\"中断\""
+  },
+  {
+    "from": "xki(\"Queue\",\"智能体完成后发送\")",
+    "to": "xki(\"排队\",\"智能体完成后发送\")"
+  },
+  {
+    "from": "label:`Cycle ${zN}`",
+    "to": "label:`循环切换${globalThis.__czhParamLabel?.({id:zN,name:zN})??zN}`"
+  },
+  {
+    "from": "Sn+=` \\xB7 Cycle ${Rn} (${Kn})`",
+    "to": "Sn+=` · 循环切换${globalThis.__czhParamLabel?.({id:Rn,name:Rn})??Rn} (${Kn})`"
+  },
+  {
+    "from": "let Sn=\"Switch Model\"",
+    "to": "let Sn=\"切换模型\""
+  },
+  {
+    "from": "children:\"Choose a model or use the cost- and availability-aware default\"",
+    "to": "children:\"选择模型，或使用会兼顾成本与可用性的默认项\""
+  },
+  {
+    "from": "description:\"Choose the model used by Explore subagent for initial research\"",
+    "to": "description:\"选择 Explore 子智能体做初步调研时使用的模型\""
+  },
+  {
+    "from": "description:\"Unlock 3x more usage on Agent & more\"",
+    "to": "description:\"解锁 3 倍智能体用量及更多权益\""
+  },
+  {
+    "from": "name:\"Get Pro+\",amount:70,price:\"$60/mo\"",
+    "to": "name:\"获取 Pro+\",amount:70,price:\"$60/mo\""
+  },
+  {
+    "from": "name:\"Get Ultra\",amount:400,price:\"$200/mo\"",
+    "to": "name:\"获取 Ultra\",amount:400,price:\"$200/mo\""
+  },
+  {
+    "from": "o0m=\"Continue without interruption\",a0m=\"Adjust on-demand limit\",l0m=\"Get extra usage for busy days and longer work sessions.\",c0m=\"Adjust Limit\",u0m=\"Unlock higher monthly usage for heavier, everyday use.\"",
+    "to": "o0m=\"不中断地继续\",a0m=\"调整按需限额\",l0m=\"为忙碌的日子和更长的工作会话获取额外用量。\",c0m=\"调整限额\",u0m=\"解锁更高的包月用量，适合更重的日常使用。\""
+  },
+  {
+    "from": "title:\"Select Model\"",
+    "to": "title:\"选择模型\""
+  },
+  {
+    "from": "tooltipTitle:\"Select Model\"",
+    "to": "tooltipTitle:\"选择模型\""
+  },
+  {
+    "from": "label:\"Select Model\"",
+    "to": "label:\"选择模型\""
+  },
+  {
+    "from": ":\"Select Model\"",
+    "to": ":\"选择模型\""
+  },
+  {
+    "from": "return\"Select model\"",
+    "to": "return\"选择模型\""
+  },
+  {
+    "from": "O=\"Select model\"",
+    "to": "O=\"选择模型\""
+  },
+  {
+    "from": "\"aria-label\":\"Select model count\"",
+    "to": "\"aria-label\":\"选择模型数量\""
+  },
+  {
+    "from": "_t(8080,\"Interrupt\")",
+    "to": "_t(8080,\"中断\")"
+  },
+  {
+    "from": "pfg=[{value:\"queue\",label:\"Send After Current Message\"},{value:\"stop-and-send\",label:\"Send Right Away\"}],mfg=[{value:\"auto\",label:\"Auto\"},{value:\"always\",label:\"Always\"},{value:\"never\",label:\"Never\"}],gfg=[{value:\"user_config_only\",label:\"sandbox.json Only\"},{value:\"user_config_with_defaults\",label:\"sandbox.json + Defaults\"},{value:\"allow_all\",label:\"Allow All\"}],ffg=[{value:\"system\",label:\"System\"},{value:\"workspace\",label:\"Workspace\"}],vfg=\"Choose how Agents run tools like command execution, MCP, and file writes.\"",
+    "to": "pfg=[{value:\"queue\",label:\"当前消息之后发送\"},{value:\"stop-and-send\",label:\"立即发送\"}],mfg=[{value:\"auto\",label:\"自动\"},{value:\"always\",label:\"始终\"},{value:\"never\",label:\"从不\"}],gfg=[{value:\"user_config_only\",label:\"仅 sandbox.json\"},{value:\"user_config_with_defaults\",label:\"sandbox.json + 默认项\"},{value:\"allow_all\",label:\"全部允许\"}],ffg=[{value:\"system\",label:\"系统\"},{value:\"workspace\",label:\"工作区\"}],vfg=\"选择智能体如何运行命令执行、MCP 和文件写入等工具。\""
+  },
+  {
+    "from": "function aEw(t,e){switch(t){case rf.ASK_EVERY_TIME:return\"Ask Every Time\";case rf.YOLO:return\"Allowlist\";case rf.YOLO_WITH_SANDBOX:return\"Allowlist (with Sandbox)\";case rf.SMART_AUTO:return\"Auto-Review\";case rf.SMART_AUTO_WITH_SANDBOX:return\"Auto-Review (with Sandbox)\";case rf.FULL_YOLO:return e?\"Run Everything (Unsandboxed)\":\"Run Everything\";default:return\"Ask Every Time\"}}",
+    "to": "function aEw(t,e){switch(t){case rf.ASK_EVERY_TIME:return\"每次询问\";case rf.YOLO:return\"允许列表\";case rf.YOLO_WITH_SANDBOX:return\"允许列表（含沙箱）\";case rf.SMART_AUTO:return\"自动审阅\";case rf.SMART_AUTO_WITH_SANDBOX:return\"自动审阅（含沙箱）\";case rf.FULL_YOLO:return e?\"全部自动运行（无沙箱）\":\"全部自动运行\";default:return\"每次询问\"}}"
+  },
+  {
+    "from": "function lEw(t){switch(t){case rf.ASK_EVERY_TIME:return\"Agent will ask for approval before running tools.\";case rf.YOLO:return\"Commands that are allowlisted will run automatically.\";case rf.YOLO_WITH_SANDBOX:return\"Many commands will run automatically inside the sandbox, and you can also allowlist other actions.\";case rf.SMART_AUTO:return\"A classifier will run for each action and decide whether it's safe to execute this command. Allowlists are still respected.\";case rf.SMART_AUTO_WITH_SANDBOX:return\"Many commands will run automatically inside the sandbox, and a classifier will run for the actions that cannot run in the sandbox. Allowlists are still respected.\";case rf.FULL_YOLO:return\"All commands will run without approval, classification or sandboxing.\";default:return\"\"}}",
+    "to": "function lEw(t){switch(t){case rf.ASK_EVERY_TIME:return\"智能体在运行工具前会先征求批准。\";case rf.YOLO:return\"允许列表中的命令将自动运行。\";case rf.YOLO_WITH_SANDBOX:return\"许多命令会在沙箱中自动运行，你也可以将其他操作加入允许列表。\";case rf.SMART_AUTO:return\"分类器会对每项操作进行判断，决定此命令是否可以安全执行。允许列表仍然有效。\";case rf.SMART_AUTO_WITH_SANDBOX:return\"许多命令会在沙箱中自动运行；无法在沙箱中运行的操作会先经过分类器。允许列表仍然有效。\";case rf.FULL_YOLO:return\"所有命令都将在无需批准、分类或沙箱的情况下运行。\";default:return\"\"}}"
+  },
+  {
+    "from": "error:`Server name: ${o.error}`",
+    "to": "error:`服务器名称：${o.error}`"
+  },
+  {
+    "from": "error:`Tool name: ${o.error}`",
+    "to": "error:`工具名称：${o.error}`"
+  },
+  {
+    "from": "function aEw(t,e){switch(t){case rf.ASK_EVERY_TIME:return\"每次询问\";case rf.YOLO:return\"Allowlist\";case rf.YOLO_WITH_SANDBOX:return\"允许列表（含沙箱）\";case rf.SMART_AUTO:return\"Auto-Review\";case rf.SMART_AUTO_WITH_SANDBOX:return\"Auto-Review (with Sandbox)\";case rf.FULL_YOLO:return e?\"全部自动运行（无沙箱）\":\"全部自动运行\";default:return\"每次询问\"}}",
+    "to": "function aEw(t,e){switch(t){case rf.ASK_EVERY_TIME:return\"每次询问\";case rf.YOLO:return\"允许列表\";case rf.YOLO_WITH_SANDBOX:return\"允许列表（含沙箱）\";case rf.SMART_AUTO:return\"自动审阅\";case rf.SMART_AUTO_WITH_SANDBOX:return\"自动审阅（含沙箱）\";case rf.FULL_YOLO:return e?\"全部自动运行（无沙箱）\":\"全部自动运行\";default:return\"每次询问\"}}"
+  },
+  {
+    "from": "\": Invalid domain format",
+    "to": "\": 域名格式无效"
+  },
+  {
+    "from": "const h=`Prevent Agent from creating or modifying files outside of the workspace automatically${o}`",
+    "to": "const h=`阻止智能体自动在工作区外创建或修改文件${o}`"
+  },
+  {
+    "from": "description:`Automatically parse links when pasted into Quick Edit (${wr?\"\\u2318\":\"Ctrl+\"}K) input`",
+    "to": "description:`粘贴到 Quick Edit（${wr?\"\\u2318\":\"Ctrl+\"}K）输入框时自动解析链接`"
+  },
+  {
+    "from": "u=`Mark Agent commits as 'Made with Cursor'${c}`",
+    "to": "u=`将智能体提交标记为由 Cursor 制作${c}`"
+  },
+  {
+    "from": "f=`Mark pull requests as made with Cursor${c}`",
+    "to": "f=`将 Pull Request 标记为由 Cursor 制作${c}`"
+  },
+  {
+    "from": "u=`Apply .cursorignore files to all subdirectories${r?\" (controlled by admin)\":\"\"}. Changing this setting requires restarting Cursor.`",
+    "to": "u=`将 .cursorignore 应用到所有子目录${r?\"（由管理员控制）\":\"\"}。更改此设置需要重启 Cursor。`"
+  },
+  {
+    "from": "u=`Apply .cursorignore files to all subdirectories${r?\"（由管理员控制）\":\"\"}. Changing this setting requires restarting Cursor.`",
+    "to": "u=`将 .cursorignore 应用到所有子目录${r?\"（由管理员控制）\":\"\"}。更改此设置需要重启 Cursor。`"
+  },
+  {
+    "from": "const f=`Use with caution. Skip symlinks during .cursorignore file discovery. Enable only when all .cursorignore files are reachable without symlinks${o?\" (controlled by admin)\":\"\"}. Changing this setting requires restarting Cursor.`",
+    "to": "const f=`请谨慎使用。在发现 .cursorignore 文件时跳过符号链接。仅当所有 .cursorignore 文件无需经过符号链接即可访问时再启用${o?\"（由管理员控制）\":\"\"}。更改此设置需要重启 Cursor。`"
+  },
+  {
+    "from": "const f=`Use with caution. Skip symlinks during .cursorignore file discovery. Enable only when all .cursorignore files are reachable without symlinks${o?\"（由管理员控制）\":\"\"}. Changing this setting requires restarting Cursor.`",
+    "to": "const f=`请谨慎使用。在发现 .cursorignore 文件时跳过符号链接。仅当所有 .cursorignore 文件无需经过符号链接即可访问时再启用${o?\"（由管理员控制）\":\"\"}。更改此设置需要重启 Cursor。`"
+  },
+  {
+    "from": "function Y_S(t){switch(t){case\"stable\":return\"Default\";case\"prerelease\":return\"抢先体验\";case\"dev\":return\"Nightly\";case\"dogfood\":return\"Dogfood\";case\"candidate\":return\"Candidate\";default:return t}}",
+    "to": "function Y_S(t){switch(t){case\"stable\":return\"默认\";case\"prerelease\":return\"抢先体验\";case\"dev\":return\"每日构建\";case\"dogfood\":return\"内部测试\";case\"candidate\":return\"候选版\";default:return t}}"
+  },
+  {
+    "from": "Dll=[{label:\"Default\",id:\"stable\",allow:[\"enterprise\",\"self-serve\"]},{label:\"Early Access\",id:\"prerelease\",allow:[\"self-serve\"]},{label:\"Nightly\",id:\"dev\",allow:[\"self-serve\"]},{label:\"Dogfood\",id:\"dogfood\",allow:[]},{label:\"Candidate\",id:\"candidate\",allow:[]}]",
+    "to": "Dll=[{label:\"默认\",id:\"stable\",allow:[\"enterprise\",\"self-serve\"]},{label:\"抢先体验\",id:\"prerelease\",allow:[\"self-serve\"]},{label:\"每日构建\",id:\"dev\",allow:[\"self-serve\"]},{label:\"内部测试\",id:\"dogfood\",allow:[]},{label:\"候选版\",id:\"candidate\",allow:[]}]"
+  },
+  {
+    "from": "Dll=[{label:\"Default\",id:\"stable\",allow:[\"enterprise\",\"self-serve\"]},{label:\"抢先体验\",id:\"prerelease\",allow:[\"self-serve\"]},{label:\"Nightly\",id:\"dev\",allow:[\"self-serve\"]},{label:\"Dogfood\",id:\"dogfood\",allow:[]},{label:\"Candidate\",id:\"candidate\",allow:[]}]",
+    "to": "Dll=[{label:\"默认\",id:\"stable\",allow:[\"enterprise\",\"self-serve\"]},{label:\"抢先体验\",id:\"prerelease\",allow:[\"self-serve\"]},{label:\"每日构建\",id:\"dev\",allow:[\"self-serve\"]},{label:\"内部测试\",id:\"dogfood\",allow:[]},{label:\"候选版\",id:\"candidate\",allow:[]}]"
+  },
+  {
+    "from": "wgg=[{value:\"none\",label:\"Off\"},{value:\"editor\",label:\"Browser Tab\"}]",
+    "to": "wgg=[{value:\"none\",label:\"关闭\"},{value:\"editor\",label:\"浏览器标签页\"}]"
+  },
+  {
+    "from": "wgg=[{value:\"none\",label:\"Off\"},{value:\"editor\",label:\"浏览器标签页\"}]",
+    "to": "wgg=[{value:\"none\",label:\"关闭\"},{value:\"editor\",label:\"浏览器标签页\"}]"
+  },
+  {
+    "from": "st?`Browser Tab: ${st}`:\"Browser Tab\"",
+    "to": "st?`浏览器标签页：${st}`:\"浏览器标签页\""
+  },
+  {
+    "from": "st?`Browser Tab: ${st}`:\"浏览器标签页\"",
+    "to": "st?`浏览器标签页：${st}`:\"浏览器标签页\""
+  },
+  {
+    "from": "content:`Keybinding: ${ass}`",
+    "to": "content:`快捷键：${ass}`"
+  },
+  {
+    "from": "\"aria-label\":`Keybinding: ${ass}`",
+    "to": "\"aria-label\":`快捷键：${ass}`"
+  },
+  {
+    "from": "label:\"分层 Cursor Ignore\"",
+    "to": "label:\"分层应用 .cursorignore\""
+  },
+  {
+    "from": "label:\"在 Cursor Ignore 搜索中忽略符号链接\"",
+    "to": "label:\"在 .cursorignore 搜索中跳过符号链接\""
+  },
+  {
+    "from": "description:`Accept the next word of a suggestion via ${d}`,label:\"部分接受\"",
+    "to": "description:`通过 ${d} 接受建议的下一个词`,label:\"部分接受\""
+  },
+  {
+    "from": "Accept the next word of a suggestion via ${d}",
+    "to": "通过 ${d} 接受建议的下一个词"
+  },
+  {
+    "from": "_?\"Copied\":\"Copy Domains\"",
+    "to": "_?\"已复制\":\"复制域名\""
+  },
+  {
+    "from": "_?\"Copied\":\"复制域名\"",
+    "to": "_?\"已复制\":\"复制域名\""
+  },
+  {
+    "from": "?\"Hide\":\"Show\"",
+    "to": "?\"隐藏\":\"显示\""
+  },
+  {
+    "from": "C?\"Running Diagnostic\":\"Run Diagnostic\"",
+    "to": "C?\"正在运行诊断\":\"运行诊断\""
+  },
+  {
+    "from": "f?\"Hide Logs\":\"Show Logs\"",
+    "to": "f?\"隐藏日志\":\"显示日志\""
+  },
+  {
+    "from": "title:\"Network\"",
+    "to": "title:\"网络\""
+  },
+  {
+    "from": "worktrees:\"Worktree\"",
+    "to": "worktrees:\"工作树\""
+  },
+  {
+    "from": "return`${p.length} worktree${p.length===1?\"\":\"s\"}`",
+    "to": "return`${p.length} 个工作树`"
+  },
+  {
+    "from": "label:\"Show\",children:\"Show\"",
+    "to": "label:\"显示\",children:\"显示\""
+  },
+  {
+    "from": "rcg=Ris({modelId:E1i,label:\"Reset to default\"}),scg=Ris({modelId:E1i,label:\"Default\"}),ocg=Ris({modelId:x1i,label:\"Disable\",labelOutsidePicker:\"Disabled\"}),wol=Ris({modelId:u2e,label:\"Inherit from parent\"})",
+    "to": "rcg=Ris({modelId:E1i,label:\"重置为默认\"}),scg=Ris({modelId:E1i,label:\"默认\"}),ocg=Ris({modelId:x1i,label:\"禁用\",labelOutsidePicker:\"已禁用\"}),wol=Ris({modelId:u2e,label:\"继承自父级\"})"
+  },
+  {
+    "from": "rcg=Ris({modelId:E1i,label:\"重置为默认\"}),scg=Ris({modelId:E1i,label:\"Default\"}),ocg=Ris({modelId:x1i,label:\"Disable\",labelOutsidePicker:\"Disabled\"}),wol=Ris({modelId:u2e,label:\"继承自父级\"})",
+    "to": "rcg=Ris({modelId:E1i,label:\"重置为默认\"}),scg=Ris({modelId:E1i,label:\"默认\"}),ocg=Ris({modelId:x1i,label:\"禁用\",labelOutsidePicker:\"已禁用\"}),wol=Ris({modelId:u2e,label:\"继承自父级\"})"
+  },
+  {
+    "from": "heading:X?\"Recent\":\"Recent Files\"",
+    "to": "heading:X?\"最近\":\"最近的文件\""
+  },
+  {
+    "from": "heading:X?\"Recent\":\"最近的文件\"",
+    "to": "heading:X?\"最近\":\"最近的文件\""
+  },
+  {
+    "from": "heading:X?si?\"More\":\"Results\":\"Files\"",
+    "to": "heading:X?si?\"更多\":\"结果\":\"文件\""
+  },
+  {
+    "from": "children:[\"Click or hold \",c1(GZe,{shortcut:c,size:\"sm\"}),\" to dictate\"]",
+    "to": "children:[\"点击或按住 \",c1(GZe,{shortcut:c,size:\"sm\"}),\" 开始语音输入\"]"
+  },
+  {
+    "from": "h===\"activating\"?\"Starting voice input\\u2026\":h===\"disabled\"?\"Voice input unavailable\":\"Start voice input\"",
+    "to": "h===\"activating\"?\"正在启动语音输入\\u2026\":h===\"disabled\"?\"语音输入不可用\":\"开始语音输入\""
+  },
+  {
+    "from": "function hXd(t,e){return t?e&&e.length>0?`for ${e} in ${t}`:`for ${t}`:\"\"}",
+    "to": "function hXd(t,e){return t?e&&e.length>0?`在 ${t} 中匹配 ${e}`:`以完成 ${t}`:\"\"}"
+  },
+  {
+    "from": "return{action:\"Waiting\",details:d.length>0?p>0?`up to ${R0r(p)} ${d}`:d:p>0?R0r(p):\"\"}}return{action:\"Waiting\",details:d}}if(l)return{action:\"Wait skipped\",details:\"\"};if(a||t.awaitOutcome.awaitCase===\"stillRunning\"&&s===0)return{action:\"Waited\",details:s===0?\"briefly\":s!==void 0&&s>0?R0r(s):\"\"};const c=t.awaitOutcome.awaitCase===\"complete\"||t.awaitOutcome.awaitCase===\"stillRunning\"?!!t.awaitOutcome.regexMatch:!1,u=hXd(r,c?o:void 0);return{action:\"Waited\",details:u.length>0?u:s!==void 0&&s>0?R0r(s):\"\"}",
+    "to": "return{action:\"正在等待\",details:d.length>0?p>0?`最多 ${R0r(p)} ${d}`:d:p>0?R0r(p):\"\"}}return{action:\"正在等待\",details:d}}if(l)return{action:\"已跳过等待\",details:\"\"};if(a||t.awaitOutcome.awaitCase===\"stillRunning\"&&s===0)return{action:\"已等待\",details:s===0?\"片刻\":s!==void 0&&s>0?R0r(s):\"\"};const c=t.awaitOutcome.awaitCase===\"complete\"||t.awaitOutcome.awaitCase===\"stillRunning\"?!!t.awaitOutcome.regexMatch:!1,u=hXd(r,c?o:void 0);return{action:\"已等待\",details:u.length>0?u:s!==void 0&&s>0?R0r(s):\"\"}"
+  },
+  {
+    "from": "awaitToolCall:{loading:\"Waiting\",completed:\"Waited\",error:\"Wait\"}",
+    "to": "awaitToolCall:{loading:\"正在等待\",completed:\"已等待\",error:\"等待失败\"}"
+  },
+  {
+    "from": "[\"Waiting\",\"Waited\",\"Wait skipped\"]",
+    "to": "[\"正在等待\",\"已等待\",\"已跳过等待\"]"
+  },
+  {
+    "from": "output:a?`Timed out after ${a}`:\"Command timed out\"",
+    "to": "output:a?`在 ${a} 后超时`:\"命令已超时\""
+  },
+  {
+    "from": "output:a?`Timed out after ${a}`:\"命令已超时\"",
+    "to": "output:a?`在 ${a} 后超时`:\"命令已超时\""
+  },
+  {
+    "from": "ge=`Command timed out after ${be.timeoutMs}ms`",
+    "to": "ge=`命令在 ${be.timeoutMs}ms 后超时`"
+  },
+  {
+    "from": "case\"connecting\":{p=a?\"Connection Failed\":\"Connecting\";break e}case\"folder\":{p=\"Select Folder\";break e}",
+    "to": "case\"connecting\":{p=a?\"连接失败\":\"正在连接\";break e}case\"folder\":{p=\"选择文件夹\";break e}"
+  },
+  {
+    "from": "case\"connecting\":{p=a?\"连接失败\":\"Connecting\";break e}case\"folder\":{p=\"Select Folder\";break e}",
+    "to": "case\"connecting\":{p=a?\"连接失败\":\"正在连接\";break e}case\"folder\":{p=\"选择文件夹\";break e}"
+  },
+  {
+    "from": "openLabel:\"Select Folder\"",
+    "to": "openLabel:\"选择文件夹\""
+  },
+  {
+    "from": "label:\"Open SSH Config\"",
+    "to": "label:\"打开 SSH 配置\""
+  },
+  {
+    "from": "mu0=ct('<div class=\"text-xs text-text-link-foreground font-light hover:underline cursor-pointer opacity-80 text-description-foreground translate-x-[34px]\">Sign in'),gu0=ct(\"<div>Clone repo\"),fu0=ct(\"<div>Connect via SSH\"),vu0=ct(\"<div>New Window\"),bu0=ct(\"<div>Steer from iOS\")",
+    "to": "mu0=ct('<div class=\"text-xs text-text-link-foreground font-light hover:underline cursor-pointer opacity-80 text-description-foreground translate-x-[34px]\">登录'),gu0=ct(\"<div>克隆仓库\"),fu0=ct(\"<div>通过 SSH 连接\"),vu0=ct(\"<div>新建窗口\"),bu0=ct(\"<div>从 iOS 引导\")"
+  },
+  {
+    "from": "mu0=ct('<div class=\"text-xs text-text-link-foreground font-light hover:underline cursor-pointer opacity-80 text-description-foreground translate-x-[34px]\">Sign in'),gu0=ct(\"<div>Clone repo\"),fu0=ct(\"<div>通过 SSH 连接\"),vu0=ct(\"<div>New Window\"),bu0=ct(\"<div>Steer from iOS\")",
+    "to": "mu0=ct('<div class=\"text-xs text-text-link-foreground font-light hover:underline cursor-pointer opacity-80 text-description-foreground translate-x-[34px]\">登录'),gu0=ct(\"<div>克隆仓库\"),fu0=ct(\"<div>通过 SSH 连接\"),vu0=ct(\"<div>新建窗口\"),bu0=ct(\"<div>从 iOS 引导\")"
+  },
+  {
+    "from": "title:\"Developer: Delete Old Chats\\u2026\"",
+    "to": "title:\"开发人员: 删除旧对话\\u2026\""
+  },
+  {
+    "from": "title:\"Proceed\"",
+    "to": "title:\"继续\""
+  },
+  {
+    "from": "title:\"New Agent\"",
+    "to": "title:\"新建智能体\""
+  },
+  {
+    "from": "title:\"Skip\"",
+    "to": "title:\"跳过\""
+  },
+  {
+    "from": "title:\"Archive\"",
+    "to": "title:\"归档\""
+  },
+  {
+    "from": "title:\"Undo\"",
+    "to": "title:\"撤销\""
+  },
+  {
+    "from": "title:\"Redo\"",
+    "to": "title:\"重做\""
+  },
+  {
+    "from": "title:\"Cut\"",
+    "to": "title:\"剪切\""
+  },
+  {
+    "from": "title:\"Copy\"",
+    "to": "title:\"复制\""
+  },
+  {
+    "from": "title:\"Paste\"",
+    "to": "title:\"粘贴\""
+  },
+  {
+    "from": "title:\"Settings\"",
+    "to": "title:\"设置\""
+  },
+  {
+    "from": "title:\"Stage\"",
+    "to": "title:\"暂存\""
+  },
+  {
+    "from": "title:\"Push\"",
+    "to": "title:\"推送\""
+  },
+  {
+    "from": "title:\"Quit\"",
+    "to": "title:\"退出\""
+  },
+  {
+    "from": "title:`Go to Chat ${t}`",
+    "to": "title:`转到对话 ${t}`"
+  },
+  {
+    "from": "title:`Go to Tab ${t}`",
+    "to": "title:`转到标签页 ${t}`"
+  },
+  {
+    "from": "title:`Fold Level ${t}`",
+    "to": "title:`折叠级别 ${t}`"
+  },
+  {
+    "from": "Ovg=[{value:\"agent\",label:\"Agent\"},{value:\"editor\",label:\"Editor\"}]",
+    "to": "Ovg=[{value:\"agent\",label:\"智能体\"},{value:\"editor\",label:\"编辑器\"}]"
+  },
+  {
+    "from": "MenubarFileMenu,label:\"File\"",
+    "to": "MenubarFileMenu,label:\"文件\""
+  },
+  {
+    "from": "MenubarEditMenu,label:\"Edit\"",
+    "to": "MenubarEditMenu,label:\"编辑\""
+  },
+  {
+    "from": "MenubarViewMenu,label:\"View\"",
+    "to": "MenubarViewMenu,label:\"查看\""
+  },
+  {
+    "from": "MenubarHelpMenu,label:\"Help\"",
+    "to": "MenubarHelpMenu,label:\"帮助\""
+  },
+  {
+    "from": "id:\"file\",label:\"File\"",
+    "to": "id:\"file\",label:\"文件\""
+  },
+  {
+    "from": "id:\"terminal\",label:\"Terminal\"",
+    "to": "id:\"terminal\",label:\"终端\""
+  },
+  {
+    "from": "Kz(rB,{title:\"Tab\"",
+    "to": "Kz(rB,{title:\"Tab 补全\""
+  },
+  {
+    "from": "Ec(\"indexing\",\"docs\",{label:\"Docs\"",
+    "to": "Ec(\"indexing\",\"docs\",{label:\"文档\""
+  },
+  {
+    "from": "heading:\"Actions\"",
+    "to": "heading:\"操作\""
+  },
+  {
+    "from": "heading:\"Skills\"",
+    "to": "heading:\"技能\""
+  },
+  {
+    "from": "heading:\"Canvas\"",
+    "to": "heading:\"画布\""
+  },
+  {
+    "from": "heading:\"Workspace\"",
+    "to": "heading:\"工作区\""
+  },
+  {
+    "from": "heading:\"Settings\"",
+    "to": "heading:\"设置\""
+  },
+  {
+    "from": "heading:\"Manage\"",
+    "to": "heading:\"管理\""
+  },
+  {
+    "from": "heading:\"Other\"",
+    "to": "heading:\"其他\""
+  },
+  {
+    "from": "heading:\"Override\"",
+    "to": "heading:\"覆盖\""
+  },
+  {
+    "from": "heading:\"Suggested\"",
+    "to": "heading:\"建议\""
+  },
+  {
+    "from": "heading:\"Enabled\"",
+    "to": "heading:\"已启用\""
+  },
+  {
+    "from": "heading:\"Configured\"",
+    "to": "heading:\"已配置\""
+  },
+  {
+    "from": "heading:\"Backend Server\"",
+    "to": "heading:\"后端服务器\""
+  },
+  {
+    "from": "heading:\"Limit Hit Stage\"",
+    "to": "heading:\"额度用尽阶段\""
+  },
+  {
+    "from": "title:\"Agents\"",
+    "to": "title:\"智能体\""
+  },
+  {
+    "from": "title:\"Appearance\"",
+    "to": "title:\"外观\""
+  },
+  {
+    "from": "title:\"Privacy\"",
+    "to": "title:\"隐私\""
+  },
+  {
+    "from": "title:\"Editor\"",
+    "to": "title:\"编辑器\""
+  },
+  {
+    "from": "title:\"Docs\"",
+    "to": "title:\"文档\""
+  },
+  {
+    "from": "title:\"Beta\"",
+    "to": "title:\"测试版\""
+  },
+  {
+    "from": "title:\"Tools\"",
+    "to": "title:\"工具\""
+  },
+  {
+    "from": "title:\"Rules\"",
+    "to": "title:\"规则\""
+  },
+  {
+    "from": "accessibleLabel:\"Privacy\"",
+    "to": "accessibleLabel:\"隐私\""
+  },
+  {
+    "from": "label:\"Appearance\"",
+    "to": "label:\"外观\""
+  },
+  {
+    "from": "label:\"Privacy\"",
+    "to": "label:\"隐私\""
+  },
+  {
+    "from": "label:\"Docs\"",
+    "to": "label:\"文档\""
+  },
+  {
+    "from": "label:\"Models\"",
+    "to": "label:\"模型\""
+  },
+  {
+    "from": "children:\"Models\"",
+    "to": "children:\"模型\""
+  },
+  {
+    "from": "ct(\"<div>Clone repo\")",
+    "to": "ct(\"<div>克隆仓库\")"
+  },
+  {
+    "from": "Xe(\"<div>Clone repo\")",
+    "to": "Xe(\"<div>克隆仓库\")"
+  },
+  {
+    "from": "Xe(\"<div>Steer from iOS\")",
+    "to": "Xe(\"<div>从 iOS 引导\")"
+  },
+  {
+    "from": "Xe(\"<div>Connect via SSH\")",
+    "to": "Xe(\"<div>通过 SSH 连接\")"
+  },
+  {
+    "from": "Xe(\"<div>New Window\")",
+    "to": "Xe(\"<div>新建窗口\")"
+  },
+  {
+    "from": "Xe(\"<div>Open project\")",
+    "to": "Xe(\"<div>打开项目\")"
+  },
+  {
+    "from": "Xe(\"<div>New project\")",
+    "to": "Xe(\"<div>新建项目\")"
+  },
+  {
+    "from": "ct(\"<div>Steer from iOS\")",
+    "to": "ct(\"<div>从 iOS 引导\")"
+  },
+  {
+    "from": "ct(\"<div>Open project\")",
+    "to": "ct(\"<div>打开项目\")"
+  },
+  {
+    "from": "ct(\"<div>New project\")",
+    "to": "ct(\"<div>新建项目\")"
+  },
+  {
+    "from": "<span>Recent projects</span>",
+    "to": "<span>最近的项目</span>"
+  },
+  {
+    "from": "empty-screen-view-all>View all",
+    "to": "empty-screen-view-all>查看全部"
+  },
+  {
+    "from": "Try a new window for running parallel agents",
+    "to": "打开新窗口以并行运行智能体"
+  },
+  {
+    "from": "O?\"Opening\\u2026\":\"Open project\"",
+    "to": "O?\"正在打开\\u2026\":\"打开项目\""
+  },
+  {
+    "from": "O?\"Opening\\u2026\":\"打开项目\"",
+    "to": "O?\"正在打开\\u2026\":\"打开项目\""
+  },
+  {
+    "from": "M?\"Creating\\u2026\":\"Create\"",
+    "to": "M?\"正在创建\\u2026\":\"创建\""
+  }
+]
