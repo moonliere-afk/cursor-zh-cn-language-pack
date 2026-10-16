@@ -53,6 +53,8 @@ try {
   );
   assert.match(injected, /renderer runtime disabled/);
   assert.doesNotMatch(injected, /MutationObserver/);
+  assert.match(injected, /__czhProductTip/);
+  assert.match(injected, /使用 \/shell 在终端中运行命令/);
   const runtime = refreshRuntimeInject(temp, extensionRoot);
   assert.ok(runtime.bytes > 0);
   assert.ok(

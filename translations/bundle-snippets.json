@@ -396,12 +396,32 @@
     "to": "function Fiw(t,e,n){const i=t.filter(s=>!(n.hideInCloudTip===!0&&Uiw(s))).map(s=>{var x=s.text.trim();if(typeof globalThis.__czhProductTip===\"function\")x=String(globalThis.__czhProductTip(x)??x);return{text:x,enabled:s.enabled}})"
   },
   {
+    "from": "t.map(e=>({...e,text:e.text.trim()})).filter(e=>e.targetSurfaces.includes(\"glass\")&&e.text.length>0)",
+    "to": "t.map(e=>{var s=e.text.trim();if(typeof globalThis.__czhProductTip===\"function\")s=String(globalThis.__czhProductTip(s)??s);return{...e,text:s}}).filter(e=>e.targetSurfaces.includes(\"glass\")&&e.text.length>0)"
+  },
+  {
+    "from": "map(s=>({text:s.text.trim(),enabled:s.enabled})).filter(s=>s.enabled!==!1&&s.text.length>0)",
+    "to": "map(s=>{var x=s.text.trim();if(typeof globalThis.__czhProductTip===\"function\")x=String(globalThis.__czhProductTip(x)??x);return{text:x,enabled:s.enabled}}).filter(s=>s.enabled!==!1&&s.text.length>0)"
+  },
+  {
     "from": "QtC=\"Tip dismissed. You can turn off future tips in Settings\"",
     "to": "QtC=\"已关闭提示。可在设置中关闭以后的提示\""
   },
   {
     "from": "\"aria-label\":\"Hide tips\"",
     "to": "\"aria-label\":\"隐藏提示\""
+  },
+  {
+    "from": "\"Always Run\"",
+    "to": "\"始终运行\""
+  },
+  {
+    "from": "\"Always Run Selected\"",
+    "to": "\"始终运行所选项\""
+  },
+  {
+    "from": "Always Run '",
+    "to": "始终运行 '"
   },
   {
     "from": "Ec(\"profile\",\"email\",{label:\"Email\"",
