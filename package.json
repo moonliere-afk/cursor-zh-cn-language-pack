@@ -76,8 +76,8 @@
       "properties": {
         "cursorAgentZh.autoApplyAfterUpgrade": {
           "type": "boolean",
-          "default": true,
-          "description": "Cursor 升级或安装文件被更新后，自动重新应用语言补丁并生成增量扫描报告。"
+          "default": false,
+          "description": "在 Cursor 扩展宿主内执行备用升级检查。Windows 默认关闭，由低优先级外部任务在 Cursor 关闭后安全处理。"
         },
         "cursorAgentZh.externalAutoUpdate": {
           "type": "boolean",

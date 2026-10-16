@@ -6,6 +6,7 @@ $ErrorActionPreference = "Stop"
 $StateRoot = Join-Path $env:LOCALAPPDATA "CursorZhPack"
 $LogFile = Join-Path $StateRoot "updater.log"
 $ForceMarker = Join-Path $StateRoot "force-update"
+$PendingMarker = Join-Path $StateRoot "pending-update"
 New-Item -ItemType Directory -Force $StateRoot | Out-Null
 
 function Write-Log {
@@ -152,8 +153,23 @@ try {
         }
     }
     if (-not $needsFullCheck) {
+        Remove-Item -LiteralPath $PendingMarker -Force -ErrorAction SilentlyContinue
         exit 0
     }
+
+    if (-not $Force) {
+        $activeCursor = Get-Process Cursor -ErrorAction SilentlyContinue |
+            Where-Object { $_.Path -and $_.Path -eq $cursorExe } |
+            Select-Object -First 1
+        if ($activeCursor) {
+            if (-not (Test-Path -LiteralPath $PendingMarker)) {
+                Write-Log "Update pending: deferred until Cursor is closed"
+                Set-Content -LiteralPath $PendingMarker -Value "1" -Encoding ASCII
+            }
+            exit 0
+        }
+    }
+    Remove-Item -LiteralPath $PendingMarker -Force -ErrorAction SilentlyContinue
 
     $cli = Join-Path $toolRoot "apply-cli.js"
     $statusText = Invoke-CursorNode $cursorExe $cli "status" $appRoot

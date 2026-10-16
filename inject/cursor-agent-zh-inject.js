@@ -985,6 +985,7 @@ globalThis.__czhProductTip = productTipZh;
 
 function translate(s, el) {
   if (s == null || typeof s !== "string") return s;
+  if (s.length > 512) return s;
   const lead = s.match(/^\s*/)[0];
   const trail = s.match(/\s*$/)[0];
   const core = s.slice(lead.length, s.length - trail.length);
@@ -1149,6 +1150,8 @@ function applyNlsPatch(msgs) {
 })();
 
 function boot() {
+  if (globalThis.__cursorAgentZhRuntimeBooted) return;
+  globalThis.__cursorAgentZhRuntimeBooted = true;
   const root = document.documentElement;
   if (!root) return;
   const pending = [];
@@ -1199,29 +1202,26 @@ function boot() {
   enqueue(document.body || root);
   schedule();
   const obs = new MutationObserver((muts) => {
-    for (let i = 0; i < muts.length; i++) {
+    const limit = Math.min(muts.length, 200);
+    for (let i = 0; i < limit; i++) {
       const mutation = muts[i];
-      if (mutation.type === "characterData") {
-        if (!skipTextContent(mutation.target)) enqueue(mutation.target);
-      } else {
-        const added = mutation.addedNodes;
-        for (let j = 0; j < added.length; j++) {
-          const node = added[j];
-          if (!skipTextContent(node)) enqueue(node);
-        }
+      const added = mutation.addedNodes;
+      for (let j = 0; j < added.length; j++) {
+        const node = added[j];
+        if (!skipTextContent(node)) enqueue(node);
       }
     }
-    // Bound work during React render storms without blocking the main thread.
-    if (pending.length > 1200) {
-      pending.splice(0, pending.length - 600).forEach((node) => queued.delete(node));
+    // Bound work during React render storms without retaining detached subtrees.
+    if (pending.length > 300) {
+      pending.splice(0, pending.length - 150).forEach((node) => queued.delete(node));
     }
     schedule();
   });
   obs.observe(root, {
     subtree: true,
     childList: true,
-    characterData: true,
   });
+  setTimeout(() => obs.disconnect(), 60 * 1000);
 }
 
 if (document.readyState === "loading") {

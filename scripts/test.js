@@ -5,6 +5,7 @@ const path = require("path");
 const {
   applyAll,
   getStatus,
+  refreshRuntimeInject,
   restoreAll,
   scanInstallation,
 } = require("../lib/patch");
@@ -43,6 +44,13 @@ try {
   );
   assert.equal(firstState.schema, 3);
   assert.equal(firstState.toolVersion, "1.0.1");
+  const runtime = refreshRuntimeInject(temp, extensionRoot);
+  assert.ok(runtime.bytes > 0);
+  assert.ok(
+    JSON.parse(
+      fs.readFileSync(path.join(temp, ".cursor-agent-zh-state.json"), "utf8")
+    ).runtimeRefreshedAt
+  );
   assert.match(
     fs.readFileSync(
       path.join(temp, "out/vs/workbench/workbench.desktop.main.js"),

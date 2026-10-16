@@ -153,7 +153,7 @@ async function applyAndNotify(auto = false) {
 
 async function autoApplyAfterUpgrade(context) {
   const config = vscode.workspace.getConfiguration("cursorAgentZh");
-  if (!config.get("autoApplyAfterUpgrade", true)) return;
+  if (!config.get("autoApplyAfterUpgrade", false)) return;
   if (!needsLightweightCheck(context)) return;
   const status = getStatus(appRoot(), __dirname);
   if (!status.needsApply) return;
