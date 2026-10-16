@@ -2,7 +2,7 @@
   "name": "cursor-agent-zh",
   "displayName": "Cursor 简体中文语言包",
   "description": "Cursor 中文汉化工具：补全 Agent、Chat、Settings、菜单与命令面板，并在 Cursor 升级后自动更新。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "cursor-agent-zh",
   "engines": {
     "vscode": "^1.90.0"
@@ -29,7 +29,16 @@
     "url": "https://github.com/moonliere-afk/cursor-zh-cn-language-pack/issues"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+    "onCommand:cursorAgentZh.apply",
+    "onCommand:cursorAgentZh.restore",
+    "onCommand:cursorAgentZh.status",
+    "onCommand:cursorAgentZh.scan",
+    "onCommand:cursorAgentZh.installAutoUpdate",
+    "onCommand:cursorAgentZh.removeAutoUpdate"
+  ],
+  "extensionKind": [
+    "ui"
   ],
   "extensionDependencies": [
     "polang233.cursor-language-pack"
@@ -52,6 +61,14 @@
       {
         "command": "cursorAgentZh.scan",
         "title": "Cursor Agent 中文：扫描升级增量"
+      },
+      {
+        "command": "cursorAgentZh.installAutoUpdate",
+        "title": "Cursor Agent 中文：安装版本升级自动修复"
+      },
+      {
+        "command": "cursorAgentZh.removeAutoUpdate",
+        "title": "Cursor Agent 中文：移除版本升级自动修复"
       }
     ],
     "configuration": {
@@ -61,6 +78,11 @@
           "type": "boolean",
           "default": true,
           "description": "Cursor 升级或安装文件被更新后，自动重新应用语言补丁并生成增量扫描报告。"
+        },
+        "cursorAgentZh.externalAutoUpdate": {
+          "type": "boolean",
+          "default": true,
+          "description": "在 Windows 中安装独立升级监控，避免 Agents/Glass 窗口未激活扩展时漏过 Cursor 版本升级。"
         }
       }
     }

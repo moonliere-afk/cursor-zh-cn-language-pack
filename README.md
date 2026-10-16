@@ -19,21 +19,23 @@
 从 [GitHub Releases](https://github.com/moonliere-afk/cursor-zh-cn-language-pack/releases/latest) 下载 `.vsix`：
 
 ```powershell
-cursor --install-extension cursor-agent-zh-1.0.0.vsix
+cursor --install-extension cursor-agent-zh-1.0.1.vsix
 ```
 
-安装后完全退出并重新打开 Cursor。首次启动会自动应用补充语言包；也可以从命令面板手动运行：
+安装后先从命令面板运行一次 `Cursor Agent 中文：安装版本升级自动修复`（Windows 会请求管理员权限），再完全退出并重新打开 Cursor。也可以手动运行：
 
 - `Cursor Agent 中文：应用汉化`
 - `Cursor Agent 中文：还原英文`
 - `Cursor Agent 中文：查看状态`
 - `Cursor Agent 中文：扫描升级增量`
+- `Cursor Agent 中文：安装版本升级自动修复`
+- `Cursor Agent 中文：移除版本升级自动修复`
 
 如果 Cursor 安装在受保护的 `Program Files` 且当前进程没有写权限，请以管理员身份启动一次 Cursor 后运行“应用汉化”。
 
 ## 升级自动跟随
 
-扩展在 Cursor 启动完成五秒后检查安装版本和所有已修改文件的哈希：
+Windows 版使用独立的计划任务 `CursorZhPackAutoUpdate`，在用户登录 5 分钟后检查，并每 30 分钟执行一次轻量探测。轻量探测只读取版本、状态和文件元数据，不启动 Node、不读取大型 bundle；仅发现 Cursor、工具或官方语言包发生变化时，才执行完整校验和重应用。它不依赖 Cursor 扩展宿主，因此 Agents/Glass 窗口没有激活第三方扩展时仍然有效。扩展激活后的检查也使用相同的轻量前置判断：
 
 1. 版本与哈希未变化：不做磁盘写入。
 2. Cursor 已升级或安装文件被替换：在后台工作线程中重新应用补丁。
@@ -41,7 +43,7 @@ cursor --install-extension cursor-agent-zh-1.0.0.vsix
 4. 无法可靠自动翻译的新增文案写入 `reports/upgrade-<版本>.json`，不会盲目机器翻译。
 5. 完成后提示完全重启 Cursor。
 
-可以在设置中关闭 `cursorAgentZh.autoApplyAfterUpgrade`。
+计划任务使用 Cursor 自带的 Electron Node 执行工具，不要求另装 Node.js；日志位于 `%LOCALAPPDATA%\CursorZhPack\updater.log`。`cursorAgentZh.externalAutoUpdate` 控制扩展是否尝试安装监控；已安装的任务请用“移除版本升级自动修复”命令移除。`cursorAgentZh.autoApplyAfterUpgrade` 控制扩展内的备用检查。
 
 ## 安全设计
 
@@ -62,6 +64,7 @@ cursor --install-extension cursor-agent-zh-1.0.0.vsix
 - 不观察或修改编辑器内部占位装饰属性。
 - 不修改 `contenteditable`、输入框、Monaco、终端或聊天消息正文。
 - 不用 `textContent` 覆盖 React 子树。
+- 定时任务平时不读取或哈希大型 bundle，只在检测到版本或元数据变化时执行一次完整处理。
 - 初始 DOM 扫描使用 `requestIdleCallback` 分片，每片最多约 7ms。
 - MutationObserver 只观察节点增删和文本更新，队列有硬上限。
 - 主要菜单和设置文案优先在 bundle 源中做精确或上下文替换，运行时注入只作为动态文案补充。

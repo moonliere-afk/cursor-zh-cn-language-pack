@@ -1,10 +1,46 @@
 const path = require("path");
+const fs = require("fs");
 const vscode = require("vscode");
+const { execFile } = require("child_process");
 const { Worker } = require("worker_threads");
 const { getStatus } = require("./lib/patch");
 
 function appRoot() {
   return vscode.env.appRoot;
+}
+
+function needsLightweightCheck(context) {
+  try {
+    const appPackage = JSON.parse(
+      fs.readFileSync(path.join(appRoot(), "package.json"), "utf8")
+    );
+    const state = JSON.parse(
+      fs.readFileSync(
+        path.join(appRoot(), ".cursor-agent-zh-state.json"),
+        "utf8"
+      )
+    );
+    const appBuild =
+      `${appPackage.version || "unknown"}-${appPackage.distro || "unknown"}`;
+    if (
+      state.appBuild !== appBuild ||
+      state.toolVersion !== context.extension.packageJSON.version
+    ) {
+      return true;
+    }
+    if (state.languagePackPath) {
+      const stat = fs.statSync(state.languagePackPath);
+      if (
+        stat.size !== state.languagePackSize ||
+        Math.trunc(stat.mtimeMs) !== Math.trunc(state.languagePackMtimeMs)
+      ) {
+        return true;
+      }
+    }
+    return false;
+  } catch {
+    return true;
+  }
 }
 
 function runWorker(action) {
@@ -27,6 +63,52 @@ function runWorker(action) {
       if (!settled && code !== 0) reject(new Error(`后台汉化进程退出：${code}`));
     });
   });
+}
+
+function runPowerShellScript(scriptName, args = []) {
+  return new Promise((resolve, reject) => {
+    const script = path.join(__dirname, "windows", scriptName);
+    execFile(
+      "powershell.exe",
+      [
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        script,
+        ...args,
+      ],
+      { windowsHide: true },
+      (error, stdout, stderr) => {
+        if (error) {
+          reject(new Error(String(stderr || stdout || error.message).trim()));
+        } else {
+          resolve(String(stdout || "").trim());
+        }
+      }
+    );
+  });
+}
+
+async function installExternalUpdater(context, interactive) {
+  if (process.platform !== "win32") {
+    if (interactive) {
+      vscode.window.showInformationMessage("独立升级监控目前仅支持 Windows。");
+    }
+    return;
+  }
+  const args = interactive ? [] : ["-Quiet", "-NoElevation"];
+  await runPowerShellScript("install-auto-update.ps1", args);
+  await context.globalState.update(
+    "externalUpdaterVersion",
+    context.extension.packageJSON.version
+  );
+  if (interactive) {
+    vscode.window.showInformationMessage(
+      "已安装升级监控。Cursor 更新后会在登录时及每 5 分钟自动检测并重应用简体中文。"
+    );
+  }
 }
 
 async function confirmRestart(message) {
@@ -72,16 +154,18 @@ async function applyAndNotify(auto = false) {
 async function autoApplyAfterUpgrade(context) {
   const config = vscode.workspace.getConfiguration("cursorAgentZh");
   if (!config.get("autoApplyAfterUpgrade", true)) return;
+  if (!needsLightweightCheck(context)) return;
   const status = getStatus(appRoot(), __dirname);
   if (!status.needsApply) return;
   const failureKey =
     `autoApplyFailure:${status.appBuild || "unknown"}:${status.toolHash || "unknown"}:${status.languagePackHash || status.reason || "unknown"}`;
-  if (context.globalState.get(failureKey)) return;
+  const lastFailure = context.globalState.get(failureKey, 0);
+  if (Date.now() - lastFailure < 15 * 60 * 1000) return;
   try {
     await applyAndNotify(true);
     await context.globalState.update(failureKey, undefined);
   } catch {
-    // Do not retry on every window in the same build.
+    // Retry after a short cooldown; never suppress one build permanently.
     await context.globalState.update(failureKey, Date.now());
   }
 }
@@ -119,8 +203,41 @@ function activate(context) {
       } catch (error) {
         vscode.window.showErrorMessage(`增量扫描失败：${error?.message || error}`);
       }
+    }),
+    vscode.commands.registerCommand("cursorAgentZh.installAutoUpdate", async () => {
+      try {
+        await installExternalUpdater(context, true);
+      } catch (error) {
+        vscode.window.showErrorMessage(
+          `安装升级监控失败：${error?.message || error}`
+        );
+      }
+    }),
+    vscode.commands.registerCommand("cursorAgentZh.removeAutoUpdate", async () => {
+      try {
+        await runPowerShellScript("uninstall-auto-update.ps1");
+        await context.globalState.update("externalUpdaterVersion", undefined);
+        vscode.window.showInformationMessage("已移除简体中文升级监控。");
+      } catch (error) {
+        vscode.window.showErrorMessage(
+          `移除升级监控失败：${error?.message || error}`
+        );
+      }
     })
   );
+
+  const config = vscode.workspace.getConfiguration("cursorAgentZh");
+  const updaterVersion = context.globalState.get("externalUpdaterVersion");
+  if (
+    process.platform === "win32" &&
+    config.get("externalAutoUpdate", true) &&
+    updaterVersion !== context.extension.packageJSON.version
+  ) {
+    installExternalUpdater(context, false).catch(() => {
+      // A standard-rights window cannot create the highest-privilege task.
+      // The explicit install command requests UAC and remains available.
+    });
+  }
 
   // Delay disk work until the window has reached an idle, usable state.
   const timer = setTimeout(() => autoApplyAfterUpgrade(context), 5000);

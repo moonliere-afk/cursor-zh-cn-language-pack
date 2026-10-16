@@ -38,6 +38,11 @@ try {
   const first = applyAll(temp, extensionRoot);
   assert.equal(first.appBuild, "1.0.0-build-a");
   assert.equal(getStatus(temp, extensionRoot).applied, true);
+  const firstState = JSON.parse(
+    fs.readFileSync(path.join(temp, ".cursor-agent-zh-state.json"), "utf8")
+  );
+  assert.equal(firstState.schema, 3);
+  assert.equal(firstState.toolVersion, "1.0.1");
   assert.match(
     fs.readFileSync(
       path.join(temp, "out/vs/workbench/workbench.desktop.main.js"),
@@ -77,6 +82,10 @@ try {
     (error) => error.code === "CURSOR_AGENT_ZH_BUSY"
   );
   fs.rmSync(path.join(temp, ".cursor-agent-zh.lock"), { force: true });
+
+  write(".cursor-agent-zh.lock", "2147483647 2026-01-01T00:00:00.000Z\n");
+  assert.doesNotThrow(() => applyAll(temp, extensionRoot));
+  assert.equal(fs.existsSync(path.join(temp, ".cursor-agent-zh.lock")), false);
 
   console.log("all tests passed");
 } finally {
