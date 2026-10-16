@@ -90,6 +90,7 @@
   "scripts": {
     "normalize": "node scripts/normalize-translations.js",
     "audit": "node scripts/audit.js",
+    "analyze:ui": "node scripts/analyze-ui-words.js",
     "test": "node scripts/test.js",
     "package": "vsce package --allow-missing-repository"
   },

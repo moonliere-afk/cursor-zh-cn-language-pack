@@ -1740,6 +1740,54 @@
     "to": "title:\"画布：重置缩放\""
   },
   {
+    "from": "asn,{name:\"New Agent\",get icon",
+    "to": "asn,{name:\"新建智能体\",get icon"
+  },
+  {
+    "from": "asn,{name:\"Automations\",get icon",
+    "to": "asn,{name:\"自动化\",get icon"
+  },
+  {
+    "from": "asn,{name:\"Customize\",get icon",
+    "to": "asn,{name:\"自定义\",get icon"
+  },
+  {
+    "from": "asn,{name:\"More\",get icon",
+    "to": "asn,{name:\"更多\",get icon"
+  },
+  {
+    "from": "asn,{name:\"Find with Agent\",get icon",
+    "to": "asn,{name:\"用智能体查找\",get icon"
+  },
+  {
+    "from": "[{id:\"tasks\",label:\"Tasks\"},{id:\"context\",label:\"Context\"},{id:\"customize\",label:\"Customize\"}]",
+    "to": "[{id:\"tasks\",label:\"任务\"},{id:\"context\",label:\"上下文\"},{id:\"customize\",label:\"自定义\"}]"
+  },
+  {
+    "from": "(li=\"Projects\")=>",
+    "to": "(li=\"项目\")=>"
+  },
+  {
+    "from": "children:\"Repositories:\"",
+    "to": "children:\"仓库：\""
+  },
+  {
+    "from": "children:\"Repositories\"",
+    "to": "children:\"仓库\""
+  },
+  {
+    "from": "\"aria-label\":\"Repositories\"",
+    "to": "\"aria-label\":\"仓库\""
+  },
+  {
+    "from": "q?.name??\"New Chat\"",
+    "to": "q?.name??\"新对话\""
+  },
+  {
+    "from": "t.name||\"New Chat\"",
+    "to": "t.name||\"新对话\""
+  },
+  {
     "from": "heading:\"Workspace\"",
     "to": "heading:\"工作区\""
   },

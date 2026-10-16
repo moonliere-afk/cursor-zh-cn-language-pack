@@ -89,7 +89,7 @@ npm run package
 1. 官方 NLS 覆盖：复用已安装的官方/第三方简体中文语言包。
 2. 精确字面量补丁：只替换审核过的完整字符串。
 3. 上下文 snippet：处理空状态 HTML、原生菜单和编译后特定结构。
-4. 官方翻译记忆：只对明确的 `title`、`label`、`description` 等 UI 字段自动应用已有官方译文。
+4. 结构化字段翻译：只在 `title`、`label`、`children`、`placeholder` 等明确 UI 字段中应用已审核主词典和官方翻译记忆，短词不会全局替换。
 5. 最小运行时层：仅保留 NLS 消息挂接，不遍历或观察 Renderer DOM。
 
 ## 注意

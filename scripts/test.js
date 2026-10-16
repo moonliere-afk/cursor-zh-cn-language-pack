@@ -29,7 +29,7 @@ function seed(version, distro) {
     'console.log("workbench");\n'
   );
   const bundle =
-    'const ui={title:"Add Symbol to Current Chat",label:"Clone repo"};\n';
+    'const ui={title:"Add Symbol to Current Chat",label:"Clone repo",children:"Search",displayName:"Projects"};\n';
   write("out/vs/workbench/workbench.glass.main.js", bundle);
   write("out/vs/workbench/workbench.desktop.main.js", bundle);
 }
@@ -66,6 +66,13 @@ try {
       "utf8"
     ),
     /将符号添加到当前对话/
+  );
+  assert.match(
+    fs.readFileSync(
+      path.join(temp, "out/vs/workbench/workbench.desktop.main.js"),
+      "utf8"
+    ),
+    /children:"搜索",displayName:"项目"/
   );
 
   const firstHash = getStatus(temp, extensionRoot);
