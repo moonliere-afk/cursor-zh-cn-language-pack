@@ -1,4 +1,5 @@
 /* cursor-agent-zh-inject */
+const DOM_RUNTIME_DISABLED = true;
 const MAP = {};
 const NLS_PATCH = {};
 const KEYS = Object.keys(MAP).sort((a, b) => b.length - a.length);
@@ -1163,6 +1164,7 @@ function applyNlsPatch(msgs) {
 })();
 
 function boot() {
+  if (DOM_RUNTIME_DISABLED) return;
   if (globalThis.__cursorAgentZhRuntimeBooted) return;
   globalThis.__cursorAgentZhRuntimeBooted = true;
   const root = document.documentElement;

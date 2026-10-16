@@ -44,6 +44,15 @@ try {
   );
   assert.equal(firstState.schema, 3);
   assert.equal(firstState.toolVersion, "1.0.1");
+  const injected = fs.readFileSync(
+    path.join(
+      temp,
+      "out/vs/code/electron-sandbox/workbench/cursor-agent-zh-inject.js"
+    ),
+    "utf8"
+  );
+  assert.match(injected, /renderer runtime disabled/);
+  assert.doesNotMatch(injected, /MutationObserver/);
   const runtime = refreshRuntimeInject(temp, extensionRoot);
   assert.ok(runtime.bytes > 0);
   assert.ok(

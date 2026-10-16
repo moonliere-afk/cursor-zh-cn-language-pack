@@ -95,6 +95,9 @@ if (!inject.includes("if (s.length > 512) return s")) {
 if (!inject.includes("DYNAMIC_UI_SEL")) {
   errors.push("限时观察结束后必须保留定向动态 UI 扫描");
 }
+if (!inject.includes("const DOM_RUNTIME_DISABLED = true;")) {
+  errors.push("稳定模式必须禁用 Renderer DOM 运行时扫描");
+}
 
 for (const [english, chinese] of Object.entries(dict)) {
   const commands =
