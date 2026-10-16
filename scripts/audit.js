@@ -83,6 +83,18 @@ if (/\.textContent\s*=/.test(inject)) {
 if (!inject.includes("requestIdleCallback")) {
   errors.push("初始 DOM 扫描必须空闲分片");
 }
+if (/characterData\s*:\s*true/.test(inject)) {
+  errors.push("运行时不得常驻观察全部文本变化");
+}
+if (!inject.includes("obs.disconnect()")) {
+  errors.push("运行时 DOM 观察必须限时断开");
+}
+if (!inject.includes("if (s.length > 512) return s")) {
+  errors.push("运行时翻译必须跳过长文本");
+}
+if (!inject.includes("DYNAMIC_UI_SEL")) {
+  errors.push("限时观察结束后必须保留定向动态 UI 扫描");
+}
 
 for (const [english, chinese] of Object.entries(dict)) {
   const commands =

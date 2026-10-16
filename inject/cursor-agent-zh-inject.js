@@ -7,6 +7,19 @@ for (const k in MAP) MAP_CI[k.toLowerCase()] = MAP[k];
 const CHROME_ONLY = new Set(["Go", "&&Go"]);
 const CHROME_SEL =
   '[role="menubar"], [role="menuitem"], .menubar, .menubar-menu-button, .menubar-menu-title, .titlebar, .titlebar-left, .titlebar-center, [data-component="glass-titlebar"]';
+const DYNAMIC_UI_SEL = [
+  CHROME_SEL,
+  '[role="menu"]',
+  '[role="dialog"]',
+  '[role="listbox"]',
+  ".monaco-menu-container",
+  ".context-view",
+  ".quick-input-widget",
+  ".notifications-center",
+  ".notifications-toasts",
+  '[data-component*="settings"]',
+  '[data-component*="toolbar"]',
+].join(",");
 const REL_AGO = /^(\d+)\s*([mhdw])\s+ago$/i;
 const REL_AGO_BARE = /^(\d+)\s+ago$/i;
 const REL_UNITS = { m: "分钟前", h: "小时前", d: "天前", w: "周前" };
@@ -1222,6 +1235,27 @@ function boot() {
     childList: true,
   });
   setTimeout(() => obs.disconnect(), 60 * 1000);
+
+  let rescanTimer = null;
+  function scanDynamicUi() {
+    rescanTimer = null;
+    const roots = document.querySelectorAll(DYNAMIC_UI_SEL);
+    const limit = Math.min(roots.length, 80);
+    for (let i = 0; i < limit; i++) enqueue(roots[i]);
+    schedule();
+  }
+  function requestDynamicScan() {
+    if (rescanTimer !== null) clearTimeout(rescanTimer);
+    rescanTimer = setTimeout(scanDynamicUi, 120);
+  }
+  document.addEventListener("pointerup", requestDynamicScan, {
+    capture: true,
+    passive: true,
+  });
+  document.addEventListener("keyup", requestDynamicScan, true);
+  document.addEventListener("focusin", requestDynamicScan, true);
+  document.addEventListener("visibilitychange", requestDynamicScan);
+  setInterval(scanDynamicUi, 30 * 1000);
 }
 
 if (document.readyState === "loading") {

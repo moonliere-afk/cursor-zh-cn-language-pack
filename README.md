@@ -67,7 +67,7 @@ Windows 版使用独立的计划任务 `CursorZhPackAutoUpdate`，在用户登�
 - 定时任务平时不读取或哈希大型 bundle，只在检测到版本或元数据变化时执行一次完整处理。
 - Cursor 运行期间不执行完整补丁扫描或大文件重写。
 - 初始 DOM 扫描使用 `requestIdleCallback` 分片，每片最多约 7ms。
-- MutationObserver 只观察节点增删，队列和单批处理量有硬上限，并在 60 秒后自动断开。
+- MutationObserver 只在启动后 60 秒观察节点增删；之后由点击、键盘、焦点事件和低频定向扫描处理菜单、对话框等动态 UI，不再常驻监听整个 Agent 对话。
 - 主要菜单和设置文案优先在 bundle 源中做精确或上下文替换，运行时注入只作为动态文案补充。
 
 ## 开发与验证
