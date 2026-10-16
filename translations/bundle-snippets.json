@@ -1640,6 +1640,106 @@
     "to": "heading:\"画布\""
   },
   {
+    "from": "tvi={canvas:{label:\"Canvas\",description:\"Produces canvases\"}}",
+    "to": "tvi={canvas:{label:\"画布\",description:\"生成画布\"}}"
+  },
+  {
+    "from": "id:AMf,name:\"Canvas\",icon:",
+    "to": "id:AMf,name:\"画布\",icon:"
+  },
+  {
+    "from": "showCanvasAction?[{id:\"canvas\",label:\"Canvas\",icon:",
+    "to": "showCanvasAction?[{id:\"canvas\",label:\"画布\",icon:"
+  },
+  {
+    "from": "const r=i??\"Canvas\";n.label!==r",
+    "to": "const r=i??\"画布\";n.label!==r"
+  },
+  {
+    "from": "title:t?\"Hide Canvas List\":\"Show Canvas List\"",
+    "to": "title:t?\"隐藏画布列表\":\"显示画布列表\""
+  },
+  {
+    "from": "\"aria-label\":\"Canvas list\"",
+    "to": "\"aria-label\":\"画布列表\""
+  },
+  {
+    "from": "\"aria-label\":\"Canvas zoom\"",
+    "to": "\"aria-label\":\"画布缩放\""
+  },
+  {
+    "from": "\"aria-label\":\"Canvas sharing\"",
+    "to": "\"aria-label\":\"画布共享\""
+  },
+  {
+    "from": "children:Fe&&Q===\"rendered\"?\"Canvas\":\"Source\"",
+    "to": "children:Fe&&Q===\"rendered\"?\"画布\":\"源代码\""
+  },
+  {
+    "from": "D(\"glass.agentPanel.canvasPreview.anchor\",\"Canvas\")",
+    "to": "D(\"glass.agentPanel.canvasPreview.anchor\",\"画布\")"
+  },
+  {
+    "from": "D(\"glass.agentPanel.canvasPreview.label\",\"Canvas\")",
+    "to": "D(\"glass.agentPanel.canvasPreview.label\",\"画布\")"
+  },
+  {
+    "from": "title:\"Canvas preview\"",
+    "to": "title:\"画布预览\""
+  },
+  {
+    "from": "displayName:f.bundle.title??\"Canvas\"",
+    "to": "displayName:f.bundle.title??\"画布\""
+  },
+  {
+    "from": "\"Loading Canvas\"",
+    "to": "\"正在加载画布\""
+  },
+  {
+    "from": "\"Loading Canvases\"",
+    "to": "\"正在加载画布\""
+  },
+  {
+    "from": "\"This Canvas isn't available on this machine\"",
+    "to": "\"此画布在当前设备上不可用\""
+  },
+  {
+    "from": "\"Browse Canvases\"",
+    "to": "\"浏览画布\""
+  },
+  {
+    "from": "\"Canvas couldn't compile\"",
+    "to": "\"画布无法编译\""
+  },
+  {
+    "from": "\"Canvas ran into an error\"",
+    "to": "\"画布遇到错误\""
+  },
+  {
+    "from": "\"Canvas couldn't load\"",
+    "to": "\"画布无法加载\""
+  },
+  {
+    "from": "D(\"glass.canvasActivationEmptyState.title\",\"Create a New Canvas\")",
+    "to": "D(\"glass.canvasActivationEmptyState.title\",\"新建画布\")"
+  },
+  {
+    "from": "title:{value:\"Share Canvas\",original:\"Share Canvas\"}",
+    "to": "title:{value:\"共享画布\",original:\"Share Canvas\"}"
+  },
+  {
+    "from": "title:\"Canvas: Zoom In\"",
+    "to": "title:\"画布：放大\""
+  },
+  {
+    "from": "title:\"Canvas: Zoom Out\"",
+    "to": "title:\"画布：缩小\""
+  },
+  {
+    "from": "title:\"Canvas: Reset Zoom\"",
+    "to": "title:\"画布：重置缩放\""
+  },
+  {
     "from": "heading:\"Workspace\"",
     "to": "heading:\"工作区\""
   },
